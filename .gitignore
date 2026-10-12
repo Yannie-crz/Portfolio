@@ -1,0 +1,18 @@
+# Operating System files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+
+# Editor / Agent metadata
+.gemini/
+.agents/
+.system_generated/
+scratch/

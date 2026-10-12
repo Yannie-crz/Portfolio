@@ -1,0 +1,17 @@
+{
+  "name": "edrei-josh-cruz-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website of Edrei Josh Cruz - BSIS Student & Aspiring IT Professional",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "bsis",
+    "student-profile"
+  ],
+  "author": "Edrei Josh Cruz",
+  "license": "ISC"
+}
