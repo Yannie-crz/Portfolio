@@ -4,7 +4,6 @@
   "description": "Portfolio Website of Edrei Josh Cruz - BSIS Student & Aspiring IT Professional",
   "main": "server.js",
   "scripts": {
-    "build": "echo 'Static portfolio ready'",
     "start": "node server.js"
   },
   "keywords": [
