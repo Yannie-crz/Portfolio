@@ -16,3 +16,6 @@ npm-debug.log*
 .agents/
 .system_generated/
 scratch/
+
+# Vercel deployment cache
+.vercel/
