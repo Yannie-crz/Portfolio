@@ -2,7 +2,7 @@
  * ============================================================================
  * EDREI JOSH CRUZ - PORTFOLIO INTERACTIVITY SCRIPT
  * Course: PROFE7 - Web Design Authoring | CHMSU College of Computer Studies
- * High-Fidelity Prototype Implementation
+ * Clean, Flat, Minimalistic Portfolio Logic
  * ============================================================================
  */
 
@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
-  // 4. ScrollSpy / Active Navigation Highlighting
+  // 3. ScrollSpy / Active Navigation Highlighting
   // --------------------------------------------------------------------------
   const sections = document.querySelectorAll('section[id]');
   const desktopNavLinks = document.querySelectorAll('.desktop-nav .nav-link');
 
   function updateActiveNavLink() {
-    const scrollPosition = window.scrollY + 180;
+    const scrollPosition = window.scrollY + 160;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveNavLink, { passive: true });
 
   // --------------------------------------------------------------------------
-  // 5. Modal Dialog System
+  // 4. Modal Dialog System
   // --------------------------------------------------------------------------
   const modalTriggers = document.querySelectorAll('[data-modal]');
   const modalBackdrops = document.querySelectorAll('.modal-backdrop');
@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
 
-      // Focus first actionable element inside modal
       const focusable = modal.querySelector('button, [href], input, select, textarea');
       if (focusable) focusable.focus();
     }
@@ -139,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Open buttons
+  // Open modal buttons
   modalTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -150,16 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Dedicated CV Open Buttons
   const openCvBtn = document.getElementById('openCvBtn');
-  const drawerCvBtn = document.getElementById('drawerCvBtn');
   const viewAcademicRecordBtn = document.getElementById('viewAcademicRecordBtn');
 
   if (openCvBtn) openCvBtn.addEventListener('click', () => openModal('modalCv'));
-  if (drawerCvBtn) {
-    drawerCvBtn.addEventListener('click', () => {
-      closeDrawer();
-      openModal('modalCv');
-    });
-  }
   if (viewAcademicRecordBtn) {
     viewAcademicRecordBtn.addEventListener('click', () => openModal('modalCv'));
   }
@@ -181,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Escape key closes open modal
+  // Escape key closes open modal or mobile drawer
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const activeModal = document.querySelector('.modal-backdrop.active');
@@ -199,49 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 6. Interactive Simulator (BCD Siomai GPS Ping)
-  // --------------------------------------------------------------------------
-  const simPingButtons = document.querySelectorAll('.sim-ping-btn');
-  const simConsoleOutput = document.getElementById('simConsoleOutput');
-
-  const cartData = {
-    '1': { name: 'Cart 01 (CHMSU Gate)', lat: '10.7335° N', lng: '122.9692° E', speed: '0 km/h (Stationary)', stock: '142 units', battery: '94%' },
-    '2': { name: 'Cart 02 (Talisay Plaza)', lat: '10.7302° N', lng: '122.9710° E', speed: '1.2 km/h (Moving)', stock: '38 units (Low)', battery: '82%' },
-    '3': { name: 'Cart 03 (Highway Hub)', lat: '10.7368° N', lng: '122.9645° E', speed: '0 km/h (Stationary)', stock: '180 units', battery: '97%' }
-  };
-
-  simPingButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const cartId = btn.getAttribute('data-cart');
-      const data = cartData[cartId];
-      if (data && simConsoleOutput) {
-        const time = new Date().toLocaleTimeString();
-        simConsoleOutput.innerHTML = `
-          <span style="color:#60A5FA;">[GPS Ping ${time}]</span> Received packet from <strong>${data.name}</strong><br>
-          » Coordinates: <code>${data.lat}, ${data.lng}</code><br>
-          » Velocity: ${data.speed} | Remaining Stock: ${data.stock} | Device Battery: ${data.battery}<br>
-          <span style="color:#10B981;">» SQLite / MySQL Local Sync: OK (Latency: 14ms)</span>
-        `;
-        showToast(`Pinged ${data.name} telemetry successfully!`, 'success');
-      }
-    });
-  });
-
-  // Interactive Map node clicks in featured project card
-  const mapNodes = document.querySelectorAll('.map-node');
-  mapNodes.forEach(node => {
-    node.addEventListener('click', () => {
-      mapNodes.forEach(n => n.classList.remove('active-focus'));
-      node.classList.add('active-focus');
-      const tooltip = node.querySelector('.node-tooltip');
-      if (tooltip) {
-        showToast(`Inspecting ${tooltip.textContent}`, 'info');
-      }
-    });
-  });
-
-  // --------------------------------------------------------------------------
-  // 7. Contact Form Validation & Submission
+  // 5. Contact Form Validation & Submission
   // --------------------------------------------------------------------------
   const inquiryForm = document.getElementById('inquiryForm');
   const fullNameInput = document.getElementById('fullName');
@@ -315,13 +265,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulated Asynchronous Submission State
+      // Submission UI State
       const originalBtnHtml = sendMessageBtn.innerHTML;
       sendMessageBtn.disabled = true;
-      sendMessageBtn.innerHTML = `
-        <span class="pulsing-radar-dot"></span>
-        <span>Transmitting...</span>
-      `;
+      sendMessageBtn.innerHTML = `<span>Sending...</span>`;
 
       setTimeout(() => {
         sendMessageBtn.disabled = false;
@@ -332,19 +279,18 @@ document.addEventListener('DOMContentLoaded', () => {
           formAlertBox.classList.remove('hidden');
         }
 
-        showToast('Message sent successfully! Thank you for contacting Edrei.', 'success');
+        showToast('Message dispatched successfully!', 'success');
         inquiryForm.reset();
         if (charCounter) charCounter.textContent = '0 / 500';
 
-        // Scroll into view of alert box
         formAlertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 1000);
+      }, 700);
 
     });
   }
 
   // --------------------------------------------------------------------------
-  // 8. Clipboard Copy Helper
+  // 6. Clipboard Copy Helper
   // --------------------------------------------------------------------------
   const emailToCopy = 'ejcruz.chmsu@gmail.com';
   const copyHeroEmailBtn = document.getElementById('copyHeroEmailBtn');
@@ -362,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyDirectEmailBtn) copyDirectEmailBtn.addEventListener('click', copyEmail);
 
   // --------------------------------------------------------------------------
-  // 9. Floating Toast Notification Dispatcher
+  // 7. Floating Toast Notification Dispatcher
   // --------------------------------------------------------------------------
   const toastContainer = document.getElementById('toastContainer');
 
@@ -382,11 +328,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       toast.style.opacity = '0';
-      toast.style.transform = 'translateY(10px)';
-      toast.style.transition = 'all 0.3s ease';
-      setTimeout(() => toast.remove(), 300);
-    }, 3800);
+      toast.style.transform = 'translateY(8px)';
+      toast.style.transition = 'all 0.25s ease';
+      setTimeout(() => toast.remove(), 250);
+    }, 3500);
   }
 
-  // End of initialization
 });

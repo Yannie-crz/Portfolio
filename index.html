@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edrei Josh Cruz | Full-Stack Web Developer & Systems Analyst</title>
-  <meta name="description" content="Portfolio of Edrei Josh Cruz - BS Information Systems Senior, Full-Stack Web Developer & Systems Analyst at Carlos Hilado Memorial State University (CHMSU). PROFE7 Web Design Authoring portfolio.">
+  <title>Edrei Josh Cruz | Full-Stack Web Developer &amp; Systems Analyst</title>
+  <meta name="description" content="Portfolio of Edrei Josh Cruz - Senior BS Information Systems student at Carlos Hilado Memorial State University (CHMSU). Full-stack web development, geospatial systems, and database engineering.">
   <meta name="keywords" content="Edrei Josh Cruz, BSIS, CHMSU, Full-Stack Web Developer, Systems Analyst, Portfolio, PROFE7, GIS, PHP, MySQL, JavaScript">
   <meta name="author" content="Edrei Josh Cruz">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=9">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230B0F19' stroke='%233B82F6' stroke-width='4'/><text x='50' y='58' font-size='28' font-weight='800' fill='%2360A5FA' text-anchor='middle' font-family='sans-serif'>EJC</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=11">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23131C31'/><text x='50' y='62' font-size='32' font-weight='800' fill='%233B82F6' text-anchor='middle' font-family='sans-serif'>EJC</text></svg>">
 </head>
 <body>
 
-  <!-- Subtle Ambient Illumination -->
-  <div class="ambient-background" aria-hidden="true">
-    <div class="ambient-glow-top"></div>
-  </div>
-
-  <!-- Sticky Glassmorphism Header / Navigation -->
+  <!-- Navigation Bar -->
   <header class="main-header" id="mainHeader">
     <div class="header-container">
       <a href="#hero" class="brand-logo" id="brandLogo">
         <span class="logo-symbol">&lt;/&gt;</span>
         <span class="logo-name">EDREI JOSH CRUZ</span>
         <span class="logo-divider">|</span>
-        <span class="logo-role">Portfolio</span>
+        <span class="logo-role">BSIS Senior</span>
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -45,18 +40,18 @@
         </ul>
       </nav>
 
-      <!-- Action Controls: Theme Switcher & CV Button -->
+      <!-- Action Controls -->
       <div class="header-actions">
-        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light Mode">
-          <span class="theme-icon sun-icon" id="sunIcon">☀️</span>
-          <span class="theme-icon moon-icon" id="moonIcon">🌙</span>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light Mode" title="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
           <span class="theme-text" id="themeLabel">Dark Mode</span>
         </button>
 
-        <button class="btn btn-primary-glow btn-sm" id="openCvBtn">
+        <a href="Cruz,%20Edrei%20Josh%20-%20BSIS4-A.pdf" download="Edrei_Josh_Cruz_Resume.pdf" class="btn btn-primary btn-sm" id="downloadCvHeaderBtn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           <span>Download CV</span>
-        </button>
+        </a>
 
         <!-- Mobile Hamburger Button -->
         <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation drawer" aria-expanded="false">
@@ -68,11 +63,11 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu (Fluid 1-Column Responsive Showcase) -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
   <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
     <div class="drawer-header">
-      <div class="drawer-logo">
+      <div class="brand-logo">
         <span class="logo-symbol">&lt;/&gt;</span>
         <span class="logo-name">EDREI JOSH CRUZ</span>
       </div>
@@ -80,31 +75,28 @@
     </div>
 
     <div class="drawer-user-card">
-      <div class="drawer-avatar">EJC</div>
-      <div>
-        <p class="drawer-name">Edrei Josh Cruz</p>
-        <p class="drawer-sub">BSIS Senior • Full-Stack Web</p>
-      </div>
+      <p class="drawer-name">Edrei Josh Cruz (EJ)</p>
+      <p class="drawer-sub">BSIS Senior • Full-Stack Web Developer</p>
     </div>
 
     <nav class="drawer-nav">
       <ul class="drawer-nav-list">
-        <li><a href="#hero" class="drawer-nav-link active" data-target="hero"><span class="drawer-icon">🏠</span> Home</a></li>
-        <li><a href="#about" class="drawer-nav-link" data-target="about"><span class="drawer-icon">👨‍💻</span> About & Academic</a></li>
-        <li><a href="#skills" class="drawer-nav-link" data-target="skills"><span class="drawer-icon">⚡</span> Technical Stack</a></li>
-        <li><a href="#projects" class="drawer-nav-link" data-target="projects"><span class="drawer-icon">🚀</span> Featured Projects</a></li>
-        <li><a href="#contact" class="drawer-nav-link" data-target="contact"><span class="drawer-icon">📬</span> Get In Touch</a></li>
+        <li><a href="#hero" class="drawer-nav-link active" data-target="hero">Home</a></li>
+        <li><a href="#about" class="drawer-nav-link" data-target="about">About &amp; Education</a></li>
+        <li><a href="#skills" class="drawer-nav-link" data-target="skills">Technical Stack</a></li>
+        <li><a href="#projects" class="drawer-nav-link" data-target="projects">Featured Projects</a></li>
+        <li><a href="#contact" class="drawer-nav-link" data-target="contact">Contact &amp; Inquiries</a></li>
       </ul>
     </nav>
 
     <div class="drawer-footer">
-      <button class="btn btn-primary-glow btn-block" id="drawerCvBtn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-        <span>Preview & Download CV</span>
-      </button>
+      <a href="Cruz,%20Edrei%20Josh%20-%20BSIS4-A.pdf" download="Edrei_Josh_Cruz_Resume.pdf" class="btn btn-primary btn-block">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Download Official CV (PDF)</span>
+      </a>
       <div class="drawer-meta">
-        <p>CHMSU CCS • BSIS IV-A</p>
-        <p>ejcruz.chmsu@gmail.com • +63 968 635 7647</p>
+        <p>CHMSU College of Computer Studies • BSIS IV-A</p>
+        <p>ejcruz.chmsu@gmail.com</p>
       </div>
     </div>
   </aside>
@@ -113,7 +105,7 @@
   <main id="mainContent">
 
     <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
+    <section class="section hero-section" id="hero">
       <div class="container hero-container">
         
         <!-- Left Hero Content -->
@@ -121,84 +113,80 @@
           <!-- Status Badge -->
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span class="status-text">AVAILABLE FOR TECH PROJECTS &amp; BSIS INTERNSHIPS</span>
+            <span class="status-text">BS INFORMATION SYSTEMS SENIOR • CHMSU TALISAY</span>
           </div>
 
           <!-- Hero Headings -->
           <h1 class="hero-title">
             <span class="hero-greeting">Hi, I'm Edrei Josh Cruz</span>
-            <span class="hero-headline gradient-text">Full-Stack Web Developer</span>
+            <span class="hero-headline">Full-Stack Web Developer &amp; Systems Analyst</span>
           </h1>
 
           <h2 class="hero-subheading">
-            BS Information Systems Senior • Systems Analyst &amp; Web Architect
+            Bachelor of Science in Information Systems (BSIS IV-A)
           </h2>
 
           <p class="hero-description">
-            Bridging enterprise information systems architecture and modern web design authoring. Experienced in engineering responsive user interfaces, geospatial location tracking applications, and secure database-driven enterprise backends.
+            Senior Information Systems student at Carlos Hilado Memorial State University (CHMSU). Specializing in modern web application engineering, relational database design, geospatial location monitoring systems, and enterprise systems analysis.
           </p>
 
-          <!-- Dual CTA Buttons -->
+          <!-- Action Buttons -->
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
-              <span>Explore Featured Projects</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <span>View Featured Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
+            <button class="btn btn-outline" id="openCvBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <span>View CV Dossier</span>
+            </button>
             <a href="#contact" class="btn btn-outline">
               <span>Get In Touch</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </a>
           </div>
 
-          <!-- Verified Social / Quick Contact Row -->
+          <!-- Quick Verified Contact Row -->
           <div class="hero-social-row">
             <a href="tel:+639686357647" class="social-chip" title="Call or SMS">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>Phone: <strong>+63 968 635 7647</strong></span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+63 968 635 7647</span>
             </a>
 
-            <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="social-chip" title="Visit GitHub Profile">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              <span>GitHub: <strong>/Yannie-crz</strong></span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/cruz-edrei-josh-75a406353" target="_blank" rel="noopener noreferrer" class="social-chip" title="Connect on LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              <span>LinkedIn: <strong>/in/cruz-edrei-josh</strong></span>
-            </a>
-
-            <button class="social-chip copy-chip" id="copyHeroEmailBtn" title="Click to copy email address">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>Email: <strong>ejcruz.chmsu@gmail.com</strong></span>
+            <button class="social-chip" id="copyHeroEmailBtn" title="Click to copy email address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>ejcruz.chmsu@gmail.com</span>
             </button>
+
+            <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub Profile">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/edrei-josh-cruz" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn: /in/edrei-josh-cruz">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
 
-        <!-- Right Hero Visual / Professional Profile Card -->
+        <!-- Right Profile Visual Card -->
         <div class="hero-visual">
-          <div class="profile-card" id="profileCard">
+          <div class="profile-card">
             <div class="profile-avatar-wrap">
-              <img src="assets/edrei_portrait_headshot.jpg" alt="Edrei Josh Cruz - Full-Stack Web Developer &amp; Systems Analyst" class="profile-avatar-img" width="160" height="160">
+              <img src="assets/edrei_portrait_headshot.jpg" alt="Edrei Josh Cruz - Senior BSIS Student" class="profile-avatar-img" width="140" height="140">
             </div>
 
-            <div class="profile-card-body">
-              <h3 class="profile-card-name">Edrei Josh Cruz</h3>
-              <p class="profile-card-role">Full-Stack Web Developer &amp; Systems Analyst</p>
-              
-              <div class="profile-meta-tags">
-                <span class="profile-tag">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  CHMSU Talisay
-                </span>
-                <span class="profile-tag">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-                  Class of 2023
-                </span>
-              </div>
+            <h3 class="profile-card-name">Edrei Josh Cruz</h3>
+            <p class="profile-card-role">BSIS Senior • Full-Stack Developer</p>
+            
+            <div class="profile-meta-tags">
+              <span class="profile-tag">CHMSU Talisay</span>
+              <span class="profile-tag">CCS Department</span>
+              <span class="profile-tag">Class of 2027</span>
+            </div>
 
-              <div class="profile-focus-badge">
-                <span>BS Information Systems (CCS)</span>
-              </div>
+            <div class="profile-focus-badge">
+              <span>BS Information Systems</span>
             </div>
           </div>
         </div>
@@ -212,124 +200,155 @@
         
         <!-- Section Header -->
         <div class="section-header">
-          <div class="section-heading-group">
-            <span class="section-eyebrow">About Me</span>
-            <h2 class="section-title">Academic Background &amp; Profile</h2>
-          </div>
-          <p class="section-subtitle">Information Systems specialization, software engineering competencies, and academic journey at CHMSU Talisay.</p>
+          <span class="section-eyebrow">01 / ABOUT</span>
+          <h2 class="section-title">Academic Background &amp; Profile</h2>
+          <p class="section-subtitle">
+            Personal profile, educational milestones at Carlos Hilado Memorial State University, and core competencies in Information Systems.
+          </p>
         </div>
 
-        <!-- Section Content Grid -->
+        <!-- Section Content: 2-Column Clean, Non-Redundant Architecture -->
         <div class="about-grid">
           
-          <!-- Narrative Bio -->
-          <div class="about-bio-card">
-            <div class="card-glass-header">
-              <span class="dot-indicator"></span>
-              <h3>Academic Background &amp; Profile</h3>
+          <!-- Column 1: Narrative Profile & Focus Areas -->
+          <div class="flat-card">
+            <div class="card-header-bar">
+              <div class="card-title-group">
+                <span class="card-dot"></span>
+                <h3>Personal &amp; Professional Profile</h3>
+              </div>
             </div>
-            <div class="card-body">
-              <p class="bio-text">
-                Hello, I'm <strong>EJ</strong>! I am a senior <strong>Bachelor of Science in Information Systems (BSIS IV-A)</strong> student at 
-                <strong>Carlos Hilado Memorial State University – Talisay Campus</strong> (2023 – 2027), under the College of Computer Studies.
-              </p>
-              <p class="bio-text">
-                My practical experience bridges enterprise systems modeling, relational database engineering, and modern web application development. I've engineered real-world systems including a <em>Food Cart Management System with Geo-Spatial Location Monitoring</em> for community beneficiaries, financial disbursement systems, and restaurant table management platforms.
+            
+            <div class="card-body-content">
+              <p class="bio-paragraph">
+                Hello, I'm <strong>Edrei Josh Cruz (EJ)</strong>! I am a senior <strong>Bachelor of Science in Information Systems (BSIS IV-A)</strong> student at <strong>Carlos Hilado Memorial State University – Talisay Campus</strong> (2023 – 2027), under the College of Computer Studies.
               </p>
               
-              <!-- Academic Pillars & Timeline -->
-              <div class="bio-pillars">
-                <div class="pillar-item">
-                  <div class="pillar-icon">🏛️</div>
+              <p class="bio-paragraph">
+                My practical experience bridges enterprise systems modeling, relational database engineering, and modern web application development. I focus on developing dependable, accessible web solutions that solve concrete operational challenges—from real-time vendor cart location monitoring to automated payment disbursement and restaurant ordering systems.
+              </p>
+              
+              <!-- Core Specialization Pillars (Informative & Clean) -->
+              <div class="focus-areas-list">
+                <div class="focus-item">
+                  <div class="focus-icon">💻</div>
                   <div>
-                    <strong>Higher Education (2023 – 2027)</strong>
-                    <span>Carlos Hilado Memorial State University — BS Information Systems (CCS)</span>
+                    <strong>Full-Stack Web Development</strong>
+                    <span>Building semantic, responsive front-ends (HTML5, CSS3, JavaScript, Bootstrap) and clean server-side APIs (Node.js, PHP).</span>
                   </div>
                 </div>
-                <div class="pillar-item">
-                  <div class="pillar-icon">🎓</div>
+
+                <div class="focus-item">
+                  <div class="focus-icon">🗺️</div>
                   <div>
-                    <strong>Prior Education (2017 – 2023)</strong>
-                    <span>Senior High School (2021 – 2023) • Victorias National High School (2017 – 2021)</span>
+                    <strong>Geospatial &amp; Location Systems</strong>
+                    <span>Integrating interactive map interfaces (Leaflet.js, OpenStreetMap) and GPS telemetry coordinates for mobile asset monitoring.</span>
                   </div>
                 </div>
-                <div class="pillar-item">
-                  <div class="pillar-icon">⚡</div>
+
+                <div class="focus-item">
+                  <div class="focus-icon">🗄️</div>
                   <div>
-                    <strong>Practical Competencies</strong>
-                    <span>Full-Stack Development (Frontend &amp; Backend), Node.js, TypeScript, Cybersecurity (GRC)</span>
+                    <strong>Relational Database Engineering</strong>
+                    <span>Designing 3NF-normalized schemas, data integrity constraints, and optimized SQL queries in MySQL for enterprise applications.</span>
+                  </div>
+                </div>
+
+                <div class="focus-item">
+                  <div class="focus-icon">📐</div>
+                  <div>
+                    <strong>Systems Analysis &amp; Modeling</strong>
+                    <span>Formulating complete SDLC documentation, Data Flow Diagrams (DFD Level 0/1), and Entity-Relationship Diagrams (ERD).</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Academic & Specialization Matrix Table -->
-          <div class="about-matrix-card">
-            <div class="card-glass-header">
-              <span class="dot-indicator"></span>
-              <h3>Institutional Credentials &amp; Background</h3>
+          <!-- Column 2: Education & Academic History -->
+          <div class="flat-card">
+            <div class="card-header-bar">
+              <div class="card-title-group">
+                <span class="card-dot"></span>
+                <h3>Education &amp; Academic Journey</h3>
+              </div>
             </div>
             
-            <div class="matrix-table">
-              <div class="matrix-row">
-                <div class="matrix-label">Degree &amp; College:</div>
-                <div class="matrix-value">
-                  <strong>BS Information Systems (2023 – 2027)</strong>
-                  <span class="matrix-sub">CHMSU - College of Computer Studies (CCS) • Talisay Campus</span>
-                </div>
-              </div>
-
-              <div class="matrix-row">
-                <div class="matrix-label">Secondary Education:</div>
-                <div class="matrix-value">
-                  <span>Victorias National High School (2017 – 2021)</span>
-                  <span class="matrix-sub">Senior High School Graduate (2021 – 2023)</span>
-                </div>
-              </div>
-
-              <div class="matrix-row">
-                <div class="matrix-label">Specialization:</div>
-                <div class="matrix-value">
-                  <div class="badge-cluster">
-                    <span class="sub-badge">Full-Stack Web</span>
-                    <span class="sub-badge">Geo-Spatial Tracking</span>
-                    <span class="sub-badge">TypeScript &amp; Node.js</span>
-                    <span class="sub-badge">Cybersecurity (GRC)</span>
+            <div class="card-body-content">
+              <!-- Education Timeline -->
+              <div class="timeline-list">
+                
+                <div class="timeline-item">
+                  <div class="timeline-header">
+                    <span class="timeline-degree">BS in Information Systems (BSIS)</span>
+                    <span class="timeline-period">2023 – Present</span>
                   </div>
+                  <span class="timeline-institution">Carlos Hilado Memorial State University – Talisay Campus</span>
+                  <p class="timeline-notes">
+                    College of Computer Studies (CCS) • Section IV-A • Expected Graduation: 2027.<br>
+                    Focus: Systems Analysis &amp; Design, Web Authoring, Relational Database Management, Enterprise Architecture.
+                  </p>
                 </div>
-              </div>
 
-              <div class="matrix-row highlight-row">
-                <div class="matrix-label">Key Capstone Project:</div>
-                <div class="matrix-value">
-                  <strong>Food Cart Management System with Geo-Spatial Monitoring (BCD Siomai)</strong>
-                  <span class="matrix-sub">Geo-tagging functions &amp; vendor inventory tracking developed for project beneficiary (2025 – 2026).</span>
-                  <div style="margin-top: 8px;">
-                    <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xs" style="color: #34D399; border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.08); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                      <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-                      <span>Live on Render: siomai-capstone-frontend.onrender.com ↗</span>
-                    </a>
+                <div class="timeline-item">
+                  <div class="timeline-header">
+                    <span class="timeline-degree">Senior High School (TVL - ICT Track)</span>
+                    <span class="timeline-period">2021 – 2023</span>
                   </div>
+                  <span class="timeline-institution">Victorias National High School</span>
+                  <p class="timeline-notes">
+                    Specialized in Information and Communications Technology, computer systems, and foundational programming.
+                  </p>
                 </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-header">
+                    <span class="timeline-degree">Junior High School</span>
+                    <span class="timeline-period">2017 – 2021</span>
+                  </div>
+                  <span class="timeline-institution">Victorias National High School</span>
+                  <p class="timeline-notes">
+                    Completed junior secondary education with foundational STEM and ICT coursework.
+                  </p>
+                </div>
+
               </div>
 
-              <div class="matrix-row">
-                <div class="matrix-label">Academic Subject Projects:</div>
-                <div class="matrix-value">
-                  <span class="matrix-sub"><strong>SYANDE (2025):</strong> Payment Disbursement System</span>
-                  <span class="matrix-sub"><strong>PROFE6 (2026):</strong> MCC Food Restaurant Menu &amp; Table Management System</span>
-                  <span class="matrix-sub"><strong>PROFE7 (2026):</strong> Web Design Authoring (Manuel M. Buncio, MIT)</span>
+              <!-- Academic Overview Table -->
+              <div class="academic-quick-info">
+                <div class="quick-info-row">
+                  <span class="quick-info-label">Degree Program</span>
+                  <span class="quick-info-value">BS Information Systems (BSIS IV-A)</span>
+                </div>
+                <div class="quick-info-row">
+                  <span class="quick-info-label">Institution</span>
+                  <span class="quick-info-value">Carlos Hilado Memorial State University</span>
+                </div>
+                <div class="quick-info-row">
+                  <span class="quick-info-label">College / Dept</span>
+                  <span class="quick-info-value">College of Computer Studies (CCS)</span>
+                </div>
+                <div class="quick-info-row">
+                  <span class="quick-info-label">Current Coursework</span>
+                  <span class="quick-info-value">PROFE7: Web Design Authoring</span>
+                </div>
+                <div class="quick-info-row">
+                  <span class="quick-info-label">Location</span>
+                  <span class="quick-info-value">Talisay City, Negros Occidental</span>
                 </div>
               </div>
             </div>
 
-            <!-- Quick Action within Matrix -->
-            <div class="matrix-action">
-              <button class="btn btn-outline btn-sm btn-block" id="viewAcademicRecordBtn">
-                <span>View Complete Academic &amp; Capstone Dossier</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <!-- Footer Action within Education Card -->
+            <div class="card-footer-actions">
+              <button class="btn btn-outline btn-sm" id="viewAcademicRecordBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                <span>View Full CV Record</span>
               </button>
+              <a href="Cruz,%20Edrei%20Josh%20-%20BSIS4-A.pdf" download="Edrei_Josh_Cruz_Resume.pdf" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download PDF</span>
+              </a>
             </div>
 
           </div>
@@ -345,204 +364,232 @@
 
         <!-- Section Header -->
         <div class="section-header">
-          <div class="section-heading-group">
-            <span class="section-eyebrow">Technical Stack</span>
-            <h2 class="section-title">Core Competencies &amp; Technical Matrix</h2>
-          </div>
-          <p class="section-subtitle">Structured proficiency matrix spanning modern front-end, server-side runtimes, relational databases, and systems modeling.</p>
+          <span class="section-eyebrow">02 / SKILLS</span>
+          <h2 class="section-title">Technical Stack &amp; Core Competencies</h2>
+          <p class="section-subtitle">
+            Structured skill categories spanning client-side authoring, server-side runtimes, relational database engineering, and systems modeling methodologies.
+          </p>
         </div>
 
-        <!-- 4-Column Technical Matrix (Directly matches Wireframe categories) -->
+        <!-- 4-Column Technical Matrix (Clean, Informative, No Gimmicks) -->
         <div class="skills-grid">
 
           <!-- 1. FRONTEND STACK -->
-          <div class="skill-category-card" data-category="frontend">
-            <div class="skill-card-head">
-              <div class="category-icon-wrap frontend-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
               </div>
               <div>
-                <h3 class="category-title">FRONTEND STACK</h3>
-                <span class="category-subtitle">Proficiency: <strong>Intermediate</strong></span>
+                <h3 class="skill-cat-title">Frontend Stack</h3>
+                <span class="skill-cat-desc">Client-Side Authoring</span>
               </div>
             </div>
 
-            <ul class="skill-item-list">
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">HTML5 Semantic</span>
-                <span class="pill-tag">W3C Standard</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">CSS3 / Flexbox</span>
-                <span class="pill-tag">Modern Grid</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">JavaScript (ES6+)</span>
-                <span class="pill-tag">Async/DOM</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Responsive UI</span>
-                <span class="pill-tag">Mobile-First</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Bootstrap 5</span>
-                <span class="pill-tag">Components</span>
-              </li>
-            </ul>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">HTML5 Semantic</span>
+                  <span class="skill-level-badge">W3C Standard</span>
+                </div>
+                <span class="skill-desc">Accessible, structured markup &amp; SEO tags</span>
+              </div>
 
-            <div class="skill-card-footer">
-              <div class="proficiency-meter">
-                <div class="meter-label"><span>Assessment</span><span>Intermediate</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 78%;"></div></div>
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">CSS3 &amp; Modern Layouts</span>
+                  <span class="skill-level-badge">Flexbox / Grid</span>
+                </div>
+                <span class="skill-desc">Responsive layouts, custom properties &amp; media queries</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level-badge">Core Logic</span>
+                </div>
+                <span class="skill-desc">DOM manipulation, fetch API, and async workflows</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Bootstrap 5</span>
+                  <span class="skill-level-badge">Component Grid</span>
+                </div>
+                <span class="skill-desc">Rapid UI scaffolding and responsive containers</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-level-badge">Mobile-First</span>
+                </div>
+                <span class="skill-desc">Ergonomic cross-device layouts and touch targets</span>
               </div>
             </div>
           </div>
 
-          <!-- 2. BACKEND & RUNTIMES -->
-          <div class="skill-category-card" data-category="backend">
-            <div class="skill-card-head">
-              <div class="category-icon-wrap backend-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          <!-- 2. BACKEND & DATABASES -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
               </div>
               <div>
-                <h3 class="category-title">BACKEND &amp; RUNTIMES</h3>
-                <span class="category-subtitle">Proficiency: <strong>Amateur / Developing</strong></span>
+                <h3 class="skill-cat-title">Backend &amp; Database</h3>
+                <span class="skill-cat-desc">Server-Side &amp; Data Layer</span>
               </div>
             </div>
 
-            <ul class="skill-item-list">
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Node.js</span>
-                <span class="pill-tag">Runtime Services</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">TypeScript</span>
-                <span class="pill-tag">Type-Safe Logic</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">PHP (OOP)</span>
-                <span class="pill-tag">Backend Services</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">MySQL Relational</span>
-                <span class="pill-tag">Normalization</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">RESTful APIs</span>
-                <span class="pill-tag">JSON CRUD</span>
-              </li>
-            </ul>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">PHP (OOP)</span>
+                  <span class="skill-level-badge">Backend Logic</span>
+                </div>
+                <span class="skill-desc">Server-side controller scripts and session handling</span>
+              </div>
 
-            <div class="skill-card-footer">
-              <div class="proficiency-meter">
-                <div class="meter-label"><span>Assessment</span><span>Amateur</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 58%;"></div></div>
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">MySQL Relational</span>
+                  <span class="skill-level-badge">3NF Normalization</span>
+                </div>
+                <span class="skill-desc">Relational schema design, foreign keys &amp; queries</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Node.js &amp; Express</span>
+                  <span class="skill-level-badge">Runtime Services</span>
+                </div>
+                <span class="skill-desc">REST API routing and server middleware</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-level-badge">Type Safety</span>
+                </div>
+                <span class="skill-desc">Typed interfaces, schemas, and robust data models</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">RESTful APIs</span>
+                  <span class="skill-level-badge">JSON Endpoints</span>
+                </div>
+                <span class="skill-desc">CRUD operations, payload parsing &amp; HTTP statuses</span>
               </div>
             </div>
           </div>
 
-          <!-- 3. SYSTEMS & CYBERSECURITY -->
-          <div class="skill-category-card" data-category="systems">
-            <div class="skill-card-head">
-              <div class="category-icon-wrap systems-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><line x1="10" y1="6.5" x2="14" y2="6.5"></line><line x1="6.5" y1="10" x2="6.5" y2="14"></line><line x1="17.5" y1="10" x2="17.5" y2="14"></line></svg>
+          <!-- 3. SYSTEMS & ANALYSIS -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><line x1="10" y1="6.5" x2="14" y2="6.5"></line><line x1="6.5" y1="10" x2="6.5" y2="14"></line><line x1="17.5" y1="10" x2="17.5" y2="14"></line></svg>
               </div>
               <div>
-                <h3 class="category-title">SYSTEMS &amp; SECURITY</h3>
-                <span class="category-subtitle">GRC (2023) &amp; Analysis</span>
+                <h3 class="skill-cat-title">Systems &amp; Analysis</h3>
+                <span class="skill-cat-desc">Architecture &amp; SDLC</span>
               </div>
             </div>
 
-            <ul class="skill-item-list">
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Cybersecurity (GRC)</span>
-                <span class="pill-tag">Beginner (2023)</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">ERD Diagrams</span>
-                <span class="pill-tag">Relational Design</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">DFD Level 0/1</span>
-                <span class="pill-tag">Flow Architecture</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Use Case Specs</span>
-                <span class="pill-tag">Actors/Flows</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">SDLC Lifecycle</span>
-                <span class="pill-tag">SYANDE Subject</span>
-              </li>
-            </ul>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">SDLC Methodologies</span>
+                  <span class="skill-level-badge">Lifecycle</span>
+                </div>
+                <span class="skill-desc">Requirements gathering, design, testing &amp; deployment</span>
+              </div>
 
-            <div class="skill-card-footer">
-              <div class="proficiency-meter">
-                <div class="meter-label"><span>Assessment</span><span>GRC Beginner / IS Modeling</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 72%;"></div></div>
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Data Flow Diagrams</span>
+                  <span class="skill-level-badge">DFD Level 0/1</span>
+                </div>
+                <span class="skill-desc">Context modeling and functional process decomposition</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">ERD Diagramming</span>
+                  <span class="skill-level-badge">Crow's Foot</span>
+                </div>
+                <span class="skill-desc">Entities, cardinality, primary &amp; foreign key relationships</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Use Case Specs</span>
+                  <span class="skill-level-badge">Actor Workflows</span>
+                </div>
+                <span class="skill-desc">Actor interactions, preconditions &amp; alternative paths</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Cybersecurity (GRC)</span>
+                  <span class="skill-level-badge">Foundations</span>
+                </div>
+                <span class="skill-desc">Governance, risk management, and data access control</span>
               </div>
             </div>
           </div>
 
           <!-- 4. TOOLS & WORKFLOW -->
-          <div class="skill-category-card" data-category="tools">
-            <div class="skill-card-head">
-              <div class="category-icon-wrap tools-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
               </div>
               <div>
-                <h3 class="category-title">TOOLS &amp; WORKFLOW</h3>
-                <span class="category-subtitle">Engineering Tooling &amp; Prototyping</span>
+                <h3 class="skill-cat-title">Tools &amp; Workflow</h3>
+                <span class="skill-cat-desc">Engineering Environment</span>
               </div>
             </div>
 
-            <ul class="skill-item-list">
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Git / GitHub</span>
-                <span class="pill-tag">Version Control</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">VS Code</span>
-                <span class="pill-tag">IDE Setup</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">XAMPP Server</span>
-                <span class="pill-tag">Apache &amp; SQL</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Figma UI/UX</span>
-                <span class="pill-tag">Hi-Fi Wireframe</span>
-              </li>
-              <li class="skill-pill">
-                <span class="pill-dot"></span>
-                <span class="pill-title">Canva Design</span>
-                <span class="pill-tag">Digital Assets</span>
-              </li>
-            </ul>
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-level-badge">Version Control</span>
+                </div>
+                <span class="skill-desc">Branching, committing, pull requests &amp; repo workflows</span>
+              </div>
 
-            <div class="skill-card-footer">
-              <div class="proficiency-meter">
-                <div class="meter-label"><span>Mastery</span><span>90%</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level-badge">Primary IDE</span>
+                </div>
+                <span class="skill-desc">Extensions, linters, and developer debugging tools</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">XAMPP Server</span>
+                  <span class="skill-level-badge">Local Stack</span>
+                </div>
+                <span class="skill-desc">Apache HTTP server, MySQL daemon &amp; phpMyAdmin</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Figma Prototyping</span>
+                  <span class="skill-level-badge">UI/UX Design</span>
+                </div>
+                <span class="skill-desc">Low-fidelity wireframing and high-fidelity prototypes</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Cloud Deployment</span>
+                  <span class="skill-level-badge">Render / Vercel</span>
+                </div>
+                <span class="skill-desc">Continuous deployment pipelines for live web apps</span>
               </div>
             </div>
           </div>
@@ -552,221 +599,238 @@
       </div>
     </section>
 
-    <!-- SECTION 03: FEATURED PROJECTS & CAPSTONE PORTFOLIO -->
+    <!-- SECTION 03: FEATURED PROJECTS & SYSTEMS ARCHITECTURE -->
     <section class="section projects-section" id="projects">
       <div class="container">
 
         <!-- Section Header -->
         <div class="section-header">
-          <div class="section-heading-group">
-            <span class="section-eyebrow">Portfolio</span>
-            <h2 class="section-title">Featured Projects &amp; Systems Architecture</h2>
-          </div>
-          <p class="section-subtitle">Real-world web systems, geospatial location tracking applications, and enterprise database solutions.</p>
+          <span class="section-eyebrow">03 / PROJECTS</span>
+          <h2 class="section-title">Featured Projects &amp; Systems Architecture</h2>
+          <p class="section-subtitle">
+            Engineered software systems, geospatial tracking platforms, and academic web solutions developed during coursework at CHMSU CCS.
+          </p>
         </div>
 
-        <!-- Project Cards Grid (2 Major Projects from Wireframe Page 2) -->
+        <!-- Uniform 4-Project Grid -->
         <div class="projects-grid">
 
           <!-- PROJECT 1: BCD SIOMAI CAPSTONE -->
           <article class="project-card" id="projectBcdSiomai">
-            
-            <!-- Project Interactive Preview Mockup HUD -->
-            <div class="project-preview-hud">
-              <div class="hud-top-bar">
-                <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="hud-live-badge" title="Open live production app on Render" style="text-decoration: none;">
-                  <span class="pulsing-radar-dot"></span>
-                  <span>LIVE ON RENDER ↗</span>
-                </a>
-                <div class="hud-stat-pill">
-                  <span class="currency-symbol">₱</span>24,850 SALES TODAY
-                </div>
+            <div class="project-header-bar">
+              <div class="project-badge-tag">
+                <span>BSIS CAPSTONE PROJECT (2025 – 2026)</span>
               </div>
-
-              <!-- Interactive GPS Visual / Route Canvas -->
-              <div class="hud-map-canvas" id="siomaiMapCanvas">
-                <div class="hud-grid-overlay"></div>
-                <!-- Simulated Location Route Path -->
-                <svg class="map-route-svg" viewBox="0 0 400 160" preserveAspectRatio="none">
-                  <path d="M 72 70 Q 140 110 200 85 T 328 62" fill="none" stroke="url(#mapGrad)" stroke-width="3" stroke-dasharray="6,4" class="animated-path"/>
-                  <defs>
-                    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#10B981" />
-                      <stop offset="50%" stop-color="#3B82F6" />
-                      <stop offset="100%" stop-color="#8B5CF6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                
-                <div class="map-node node-1" title="Vendor Cart 01: CHMSU Main Gate">
-                  <span class="node-ping"></span>
-                  <div class="node-marker">🛒</div>
-                  <span class="node-tooltip">Cart 01: CHMSU Gate (Active)</span>
-                </div>
-
-                <div class="map-node node-2 active-focus" title="Vendor Cart 02: Talisay Public Plaza">
-                  <span class="node-ping"></span>
-                  <div class="node-marker">📍</div>
-                  <span class="node-tooltip">Cart 02: Talisay Plaza (₱12,400)</span>
-                </div>
-
-                <div class="map-node node-3" title="Vendor Cart 03: Highway Hub">
-                  <span class="node-ping"></span>
-                  <div class="node-marker">🛒</div>
-                  <span class="node-tooltip">Cart 03: Concepcion Hub</span>
-                </div>
-
-                <div class="hud-bottom-telemetry">
-                  <span>Coordinates: 10.7335° N, 122.9692° E</span>
-                  <span class="hud-status-text">Active Carts: <strong>3/3 Synced</strong></span>
-                </div>
-              </div>
+              <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="live-indicator-pill" title="Live production application">
+                <span>● LIVE ON RENDER ↗</span>
+              </a>
             </div>
 
-            <!-- Project Details Body -->
-            <div class="project-content">
-              <div class="project-category-badge">
-                <span class="accent-dot"></span>
-                <span>BSIS CAPSTONE • FULL-STACK GIS</span>
-              </div>
-
+            <div class="project-content-body">
               <h3 class="project-title">
-                BCD Siomai — Sales &amp; Inventory System with Geospatial Tracking
+                BCD Siomai — Sales &amp; Inventory Management System with Geospatial Tracking
               </h3>
 
               <p class="project-description">
-                Enterprise web application featuring real-time vendor cart location tracking via interactive maps, daily stock return reconciliation, automatic package discount computation, and predictive sales forecasting.
+                Lead developer for a comprehensive web-based inventory reconciliation and vendor cart location tracking platform developed for our beneficiary enterprise. Bridges daily mobile cart monitoring with commissary administrative controls.
               </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Geospatial Map Tracking:</strong> Real-time location visualization of mobile vendor carts using Leaflet.js and OpenStreetMap.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Stock Reconciliation:</strong> Evening return inventory audits reconciling commissary distribution with cash collections.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Automated Computations:</strong> Wholesale package discount calculations and predictive daily reorder logs.</span>
+                </div>
+              </div>
 
               <!-- Tech Badges -->
               <div class="tech-stack-row">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Tailwind CSS</span>
                 <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Leaflet / OpenStreetMap</span>
-                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">Leaflet.js</span>
+                <span class="tech-tag">REST API</span>
                 <span class="tech-tag">Render Cloud</span>
               </div>
-
-              <!-- Action Buttons -->
-              <div class="project-actions-row">
-                <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow btn-sm" id="siomaiLiveLink" title="Launch live BCD Siomai Capstone web app on Render">
-                  <span>Visit Live App</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSiomaiDemo">
-                  <span>Simulator Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                </button>
-                <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSiomaiCase">
-                  <span>Case Study</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                </button>
-              </div>
             </div>
 
+            <div class="project-actions-footer">
+              <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Visit Live App ↗</span>
+              </a>
+              <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSiomaiCase">
+                <span>Case Study &amp; Architecture</span>
+              </button>
+              <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>GitHub Profile ↗</span>
+              </a>
+            </div>
           </article>
 
-          <!-- PROJECT 2: CHMSU CAMPUS TRAFFIC PRIORITY ROUTING & TELEMETRY PORTAL -->
-          <article class="project-card" id="projectChmsuNetwork">
-            
-            <!-- Project Interactive Preview Mockup HUD -->
-            <div class="project-preview-hud">
-              <div class="hud-top-bar">
-                <div class="hud-live-badge purple-badge">
-                  <span class="pulsing-radar-dot purple-dot"></span>
-                  <span>SDN ROUTING MATRIX</span>
-                </div>
-                <div class="hud-stat-pill purple-pill">
-                  12ms FIBER LATENCY
-                </div>
+          <!-- PROJECT 2: MCC FOOD RESTAURANT MANAGEMENT -->
+          <article class="project-card" id="projectMccRestaurant">
+            <div class="project-header-bar">
+              <div class="project-badge-tag">
+                <span>PROFE6 SUBJECT PROJECT (2026)</span>
               </div>
-
-              <!-- Interactive SDN Topology Diagram Canvas -->
-              <div class="hud-sdn-canvas" id="sdnTopologyCanvas">
-                <div class="hud-grid-overlay"></div>
-                
-                <div class="sdn-flow-container">
-                  <!-- Node 1: Main Core -->
-                  <div class="sdn-node core-node">
-                    <div class="sdn-node-header">MAIN CORE</div>
-                    <div class="sdn-node-sub">• Online (Talisay Core)</div>
-                  </div>
-
-                  <!-- Connector Arrow with Moving Packets -->
-                  <div class="sdn-link-pipe">
-                    <span class="sdn-packet-flow"></span>
-                    <span class="sdn-packet-flow delayed"></span>
-                  </div>
-
-                  <!-- Node 2: Priority Q -->
-                  <div class="sdn-node priority-node">
-                    <div class="sdn-node-header">PRIORITY Q</div>
-                    <div class="sdn-node-sub">• Voice / Video / SIS</div>
-                  </div>
-
-                  <!-- Connector Arrow with Moving Packets -->
-                  <div class="sdn-link-pipe">
-                    <span class="sdn-packet-flow"></span>
-                    <span class="sdn-packet-flow delayed"></span>
-                  </div>
-
-                  <!-- Node 3: Campus Edge -->
-                  <div class="sdn-node edge-node">
-                    <div class="sdn-node-header">CAMPUS EDGE</div>
-                    <div class="sdn-node-sub">• 1 Gbps Fiber Link</div>
-                  </div>
-                </div>
-
-                <div class="hud-bottom-telemetry">
-                  <span>Subnet: 172.16.0.0/16 Core Backbone</span>
-                  <span class="hud-status-text">Packet Drop: <strong>0.002% (Optimal)</strong></span>
-                </div>
-              </div>
+              <span class="academic-indicator-pill">ACADEMIC DEPLOYMENT</span>
             </div>
 
-            <!-- Project Details Body -->
-            <div class="project-content">
-              <div class="project-category-badge">
-                <span class="accent-dot purple-dot"></span>
-                <span>SYSTEMS ANALYSIS • NETWORKING</span>
-              </div>
-
+            <div class="project-content-body">
               <h3 class="project-title">
-                CHMSU Campus Traffic Priority Routing &amp; Telemetry Portal
+                MCC Food Restaurant — Digital Menu &amp; Table Management Platform
               </h3>
 
               <p class="project-description">
-                SDN-based traffic management dashboard designed for priority data routing across CHMSU campuses, featuring centralized hardware telemetry, fiber optic link monitoring, and network analysis reports.
+                Interactive restaurant table seating and digital ordering management system engineered for a friend's dining workplace as an applied PROFE6 class deliverable. Streamlines dining room occupancy and cashier order queues.
               </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Table Seating Overview:</strong> Visual floor grid highlighting available, reserved, and occupied table stations in real time.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Menu Catalog Management:</strong> Administrative dashboard for managing dish categories, pricing, and ingredient availability.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Order &amp; Billing Dispatch:</strong> Point-of-sale order routing with subtotal computation, tax calculations, and receipt output.</span>
+                </div>
+              </div>
 
               <!-- Tech Badges -->
               <div class="tech-stack-row">
+                <span class="tech-tag">PHP (OOP)</span>
+                <span class="tech-tag">MySQL Relational</span>
                 <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">MySQL DB</span>
-                <span class="tech-tag">Network Admin</span>
-                <span class="tech-tag">SDLC</span>
-              </div>
-
-              <!-- Action Buttons (From Wireframe) -->
-              <div class="project-actions-row">
-                <button class="btn btn-primary btn-sm project-modal-btn" data-modal="modalSdnOverview">
-                  <span>System Overview</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </button>
-                <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSdnDocs">
-                  <span>Technical Docs</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </button>
-                <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSdnSpecs">
-                  <span>DFD / ERD Specs</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                </button>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">XAMPP</span>
               </div>
             </div>
 
+            <div class="project-actions-footer">
+              <button class="btn btn-primary btn-sm project-modal-btn" data-modal="modalMccOverview">
+                <span>System Overview</span>
+              </button>
+              <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalMccSpecs">
+                <span>Database Schema</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: PAYMENT DISBURSEMENT SYSTEM -->
+          <article class="project-card" id="projectDisbursement">
+            <div class="project-header-bar">
+              <div class="project-badge-tag">
+                <span>SYANDE SUBJECT PROJECT (2025)</span>
+              </div>
+              <span class="academic-indicator-pill">ENTERPRISE SYSTEMS</span>
+            </div>
+
+            <div class="project-content-body">
+              <h3 class="project-title">
+                Institutional Payment Disbursement &amp; Voucher Management System
+              </h3>
+
+              <p class="project-description">
+                Systems Analysis and Design (SYANDE) software solution developed to digitize corporate payment requisitions, multi-tiered supervisory approval workflows, voucher verification, and accounting reconciliation.
+              </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Role-Based Access:</strong> Segmented permissions for Requester, Department Head Approver, Auditor, and Cashier.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Voucher Verification:</strong> Structured disbursement forms with itemized cost breakdowns and attachment checkpoints.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Audit Trail Ledger:</strong> Timestamped approval logs ensuring non-repudiation and clear financial tracking.</span>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="tech-stack-row">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL DB</span>
+                <span class="tech-tag">Systems Modeling</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">SDLC</span>
+              </div>
+            </div>
+
+            <div class="project-actions-footer">
+              <button class="btn btn-primary btn-sm project-modal-btn" data-modal="modalDisbursementOverview">
+                <span>System Overview</span>
+              </button>
+              <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalDisbursementAudit">
+                <span>Audit Workflow Specs</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: CHMSU NETWORK TELEMETRY PORTAL -->
+          <article class="project-card" id="projectChmsuNetwork">
+            <div class="project-header-bar">
+              <div class="project-badge-tag">
+                <span>PROFE7 WEB DESIGN AUTHORING (2026)</span>
+              </div>
+              <span class="academic-indicator-pill">SYSTEMS MODELING</span>
+            </div>
+
+            <div class="project-content-body">
+              <h3 class="project-title">
+                CHMSU Campus Network Monitoring &amp; Traffic Priority Portal
+              </h3>
+
+              <p class="project-description">
+                Systems analysis and interface authoring portal modeling multi-campus network telemetry across CHMSU satellite nodes (Talisay, Alijis, Fortune Town, Binalbagan), accompanied by complete DFD and ERD documentation.
+              </p>
+
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Campus Node Topology:</strong> Visual layout representing campus edge connections and core academic bandwidth links.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>DFD Architecture:</strong> Formal Context Level 0 and Level 1 Functional Data Flow specifications.</span>
+                </div>
+                <div class="project-feature-item">
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Normalized ERD Schema:</strong> Crow's Foot relational data models for traffic telemetry and node logging.</span>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="tech-stack-row">
+                <span class="tech-tag">HTML5 Semantic</span>
+                <span class="tech-tag">Vanilla CSS3</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">DFD Level 0/1</span>
+                <span class="tech-tag">ERD Schema</span>
+              </div>
+            </div>
+
+            <div class="project-actions-footer">
+              <button class="btn btn-primary btn-sm project-modal-btn" data-modal="modalSdnSpecs">
+                <span>DFD / ERD Specs</span>
+              </button>
+              <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSdnDocs">
+                <span>Technical Documentation</span>
+              </button>
+            </div>
           </article>
 
         </div>
@@ -780,101 +844,100 @@
 
         <!-- Section Header -->
         <div class="section-header">
-          <div class="section-heading-group">
-            <span class="section-eyebrow">Get In Touch</span>
-            <h2 class="section-title">Contact &amp; Collaboration Inquiries</h2>
-          </div>
-          <p class="section-subtitle">Reach out for software development opportunities, BSIS internship discussions, or systems analysis consultations.</p>
+          <span class="section-eyebrow">04 / CONTACT</span>
+          <h2 class="section-title">Get In Touch &amp; Collaboration Inquiries</h2>
+          <p class="section-subtitle">
+            Available for software development opportunities, BSIS internship discussions, database modeling consultations, and academic collaboration.
+          </p>
         </div>
 
-        <!-- Contact Section Content Grid (Clean 2-Column Professional Architecture) -->
+        <!-- Contact Section Content Grid (Clean 2-Column Architecture) -->
         <div class="contact-grid">
 
           <!-- Left Column: Inquiry Form -->
-          <div class="contact-form-column">
-            <div class="contact-form-card">
-              <div class="card-glass-header">
-                <span class="dot-indicator"></span>
+          <div class="flat-card">
+            <div class="card-header-bar">
+              <div class="card-title-group">
+                <span class="card-dot"></span>
                 <h3>Send an Inquiry or Collaboration Proposal</h3>
               </div>
-
-              <form class="inquiry-form" id="inquiryForm" novalidate>
-                
-                <div class="form-row two-col">
-                  <div class="form-group">
-                    <label for="fullName">Full Name <span class="required-star">*</span></label>
-                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Edrei Josh Cruz" required autocomplete="name">
-                    <span class="form-error-msg" id="fullNameError">Please enter your full name.</span>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="emailAddress">Email Address <span class="required-star">*</span></label>
-                    <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="cruz.edreijosh@gmail.com" required autocomplete="email">
-                    <span class="form-error-msg" id="emailAddressError">Please enter a valid email address.</span>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="inquirySubject">Inquiry Subject <span class="required-star">*</span></label>
-                  <div class="select-wrapper">
-                    <select id="inquirySubject" name="inquirySubject" class="form-select" required>
-                      <option value="" disabled selected>Project Collaboration / BSIS Internship Opportunity</option>
-                      <option value="internship">Project Collaboration / BSIS Internship Opportunity</option>
-                      <option value="capstone">Capstone Research &amp; GIS Web Systems</option>
-                      <option value="database">Database Architecture &amp; Systems Analysis Consultation</option>
-                      <option value="general">General Professional Inquiry</option>
-                    </select>
-                  </div>
-                  <span class="form-error-msg" id="inquirySubjectError">Please select an inquiry subject.</span>
-                </div>
-
-                <div class="form-group">
-                  <div class="label-with-counter">
-                    <label for="projectScopeMessage">Project Scope &amp; Message <span class="required-star">*</span></label>
-                    <span class="char-counter" id="charCounter">0 / 500</span>
-                  </div>
-                  <textarea id="projectScopeMessage" name="projectScopeMessage" class="form-textarea" rows="4" maxlength="500" placeholder="Hello! I would like to discuss a web systems development collaboration..." required></textarea>
-                  <span class="form-error-msg" id="projectScopeMessageError">Please enter your message (at least 15 characters).</span>
-                </div>
-
-                <div class="form-bottom-row">
-                  <div class="security-note">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                    <span>Secured client validation &amp; CSRF protection</span>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary" id="sendMessageBtn">
-                    <span>Send Message</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                  </button>
-                </div>
-
-                <!-- Live Submission Confirmation Banner -->
-                <div class="form-alert-box hidden" id="formAlertBox">
-                  <span class="alert-icon">✓</span>
-                  <div class="alert-content">
-                    <strong>Message Dispatched Successfully!</strong>
-                    <p>Thank you for reaching out. A confirmation record has been logged and forwarded to <em>cruz.edreijosh@gmail.com</em>.</p>
-                  </div>
-                </div>
-
-              </form>
             </div>
-          </div>
 
-          <!-- Right Column: Direct Contact & Credentials -->
-          <div class="contact-info-column">
-            
-            <!-- Direct Contact Card -->
-            <div class="contact-info-card">
-              <div class="card-glass-header">
-                <span class="dot-indicator"></span>
-                <h3>Direct Contact &amp; Location</h3>
+            <form class="inquiry-form" id="inquiryForm" novalidate>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="required-star">*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-input" required autocomplete="name">
+                  <span class="form-error-msg" id="fullNameError">Please enter your full name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="emailAddress" name="emailAddress" class="form-input" required autocomplete="email">
+                  <span class="form-error-msg" id="emailAddressError">Please enter a valid email address.</span>
+                </div>
               </div>
 
-              <div class="contact-info-body">
+              <div class="form-group">
+                <label for="inquirySubject">Inquiry Subject <span class="required-star">*</span></label>
+                <select id="inquirySubject" name="inquirySubject" class="form-select" required>
+                  <option value="" disabled selected>Select an inquiry topic...</option>
+                  <option value="internship">BSIS Internship Opportunity / Tech Placement</option>
+                  <option value="collaboration">Software Project Collaboration</option>
+                  <option value="capstone">Capstone Research &amp; Geospatial Systems</option>
+                  <option value="database">Database Modeling &amp; Web Systems Consultation</option>
+                  <option value="general">General Inquiries</option>
+                </select>
+                <span class="form-error-msg" id="inquirySubjectError">Please select an inquiry topic.</span>
+              </div>
+
+              <div class="form-group">
+                <div class="label-with-counter">
+                  <label for="projectScopeMessage">Message Details <span class="required-star">*</span></label>
+                  <span class="char-counter" id="charCounter">0 / 500</span>
+                </div>
+                <textarea id="projectScopeMessage" name="projectScopeMessage" class="form-textarea" rows="4" maxlength="500" required></textarea>
+                <span class="form-error-msg" id="projectScopeMessageError">Please enter your message (at least 15 characters).</span>
+              </div>
+
+              <div class="form-bottom-row">
+                <div class="security-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Client-side validation secured</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="sendMessageBtn">
+                  <span>Send Message</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+
+              <!-- Live Submission Confirmation Banner -->
+              <div class="form-alert-box hidden" id="formAlertBox">
+                <div>
+                  <strong>✓ Message Dispatched Successfully!</strong>
+                  <p>Thank you for reaching out. A confirmation record has been recorded and routed to <em>ejcruz.chmsu@gmail.com</em>.</p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right Column: Direct Contact & LinkedIn QR -->
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <!-- Direct Contact Card -->
+            <div class="flat-card">
+              <div class="card-header-bar">
+                <div class="card-title-group">
+                  <span class="card-dot"></span>
+                  <h3>Direct Contact &amp; Location</h3>
+                </div>
+              </div>
+
+              <div class="contact-info-list">
                 <div class="contact-detail-row">
-                  <div class="contact-detail-icon">
+                  <div class="contact-icon-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   </div>
                   <div class="contact-detail-text">
@@ -887,7 +950,7 @@
                 </div>
 
                 <div class="contact-detail-row">
-                  <div class="contact-detail-icon">
+                  <div class="contact-icon-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                   </div>
                   <div class="contact-detail-text">
@@ -897,7 +960,7 @@
                 </div>
 
                 <div class="contact-detail-row">
-                  <div class="contact-detail-icon">
+                  <div class="contact-icon-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   </div>
                   <div class="contact-detail-text">
@@ -907,34 +970,32 @@
                 </div>
 
                 <div class="contact-detail-row">
-                  <div class="contact-detail-icon">
+                  <div class="contact-icon-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                   </div>
                   <div class="contact-detail-text">
-                    <span class="detail-label">Degree Program</span>
-                    <span class="detail-value">BS Information Systems (BSIS IV-A • Class of 2023)</span>
+                    <span class="detail-label">Academic Program</span>
+                    <span class="detail-value">BS Information Systems (BSIS IV-A • Class of 2027)</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Authentic LinkedIn QR Card -->
+            <!-- LinkedIn QR Card -->
             <div class="linkedin-barcode-card">
               <div class="barcode-preview-box">
-                <img src="assets/linkedin_qr.jpg" alt="Barcode - Redirect to Edrei's LinkedIn Profile" class="barcode-img">
+                <img src="assets/linkedin_qr.jpg" alt="LinkedIn Profile QR Code" class="barcode-img">
               </div>
               <div class="barcode-info-text">
                 <span class="barcode-badge">✦ Professional Network</span>
                 <h4>Connect on LinkedIn</h4>
-                <p>Scan with your phone or click below to view verified work experience and academic credentials.</p>
+                <p>Scan with your mobile device or use the verified links below to view academic background and experience.</p>
                 <div class="barcode-actions">
-                  <a href="https://www.linkedin.com/in/cruz-edrei-josh-75a406353" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xs">
-                    <span>Visit /in/cruz-edrei-josh</span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <a href="https://www.linkedin.com/in/edrei-josh-cruz" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xs">
+                    <span>Visit /in/edrei-josh-cruz ↗</span>
                   </a>
-                  <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xs">
-                    <span>GitHub: /Yannie-crz</span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <a href="Cruz,%20Edrei%20Josh%20-%20BSIS4-A.pdf" download="Edrei_Josh_Cruz_Resume.pdf" class="btn btn-outline btn-xs">
+                    <span>Download CV (PDF)</span>
                   </a>
                 </div>
               </div>
@@ -960,8 +1021,7 @@
 
       <div class="footer-right">
         <a href="#hero" class="back-to-top" id="backToTopBtn">
-          <span>Back to Top</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          <span>Back to Top ↑</span>
         </a>
         <span class="footer-divider">|</span>
         <span class="course-code">PROFE7: Web Design Authoring</span>
@@ -969,7 +1029,7 @@
     </div>
   </footer>
 
-  <!-- ==================== INTERACTIVE MODALS ==================== -->
+  <!-- ==================== MODAL SYSTEM ==================== -->
 
   <!-- 1. CURRICULUM VITAE (CV) MODAL -->
   <div class="modal-backdrop" id="modalCv" aria-hidden="true">
@@ -977,9 +1037,9 @@
       <div class="modal-header">
         <div class="modal-title-group">
           <h3>Curriculum Vitae — Edrei Josh Cruz</h3>
-          <span class="modal-sub">BS Information Systems • Full-Stack Developer</span>
+          <span class="modal-sub">BS Information Systems Senior • Full-Stack Developer</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body printable-cv" id="cvPrintContent">
         
@@ -987,13 +1047,17 @@
         <div class="cv-header-block">
           <div class="cv-name-wrap">
             <h2>EDREI JOSH CRUZ</h2>
-            <p class="cv-role-line">Full-Stack Developer &amp; Systems Analyst (EJ)</p>
-            <p class="cv-contact-line">Talisay City, Negros Occidental • +63 968 635 7647 • ejcruz.chmsu@gmail.com • linkedin.com/in/cruz-edrei-josh-75a406353</p>
+            <p class="cv-role-line">Full-Stack Web Developer &amp; Systems Analyst (EJ)</p>
+            <p class="cv-contact-line">Talisay City, Negros Occidental • +63 968 635 7647 • ejcruz.chmsu@gmail.com • linkedin.com/in/edrei-josh-cruz</p>
           </div>
-          <div class="cv-action-triggers">
-            <button class="btn btn-primary btn-sm" id="printCvBtn">
+          <div class="cv-action-triggers" style="display: flex; gap: 8px;">
+            <a href="Cruz,%20Edrei%20Josh%20-%20BSIS4-A.pdf" download="Edrei_Josh_Cruz_Resume.pdf" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download PDF</span>
+            </a>
+            <button class="btn btn-outline btn-sm" id="printCvBtn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-              <span>Print / Save PDF</span>
+              <span>Print</span>
             </button>
           </div>
         </div>
@@ -1003,28 +1067,36 @@
         <!-- Education -->
         <div class="cv-section">
           <h4 class="cv-section-title">EDUCATION &amp; ACADEMIC BACKGROUND</h4>
+          
           <div class="cv-entry">
             <div class="cv-entry-head">
               <strong>Carlos Hilado Memorial State University (CHMSU) – Talisay Campus</strong>
-              <span class="cv-date">2023 – 2027</span>
+              <span class="cv-date">2023 – 2027 (Expected)</span>
             </div>
             <p class="cv-institution">Bachelor of Science in Information Systems (BSIS IV-A) • College of Computer Studies</p>
+            <ul class="cv-bullets">
+              <li>Specializing in enterprise systems analysis, database modeling, and full-stack web application development.</li>
+              <li>Academic projects: BCD Siomai Capstone, Payment Disbursement System (SYANDE), Restaurant Table System (PROFE6).</li>
+            </ul>
           </div>
+
           <div class="cv-entry">
             <div class="cv-entry-head">
-              <strong>Senior High School</strong>
+              <strong>Victorias National High School — Senior High School</strong>
               <span class="cv-date">2021 – 2023</span>
             </div>
+            <p class="cv-institution">Technical-Vocational-Livelihood (TVL) Track • Information and Communications Technology (ICT)</p>
           </div>
+
           <div class="cv-entry">
             <div class="cv-entry-head">
-              <strong>Victorias National High School</strong>
+              <strong>Victorias National High School — Junior High School</strong>
               <span class="cv-date">2017 – 2021</span>
             </div>
           </div>
         </div>
 
-        <!-- Project & Work Experience (Directly from Resume) -->
+        <!-- Project & Work Experience -->
         <div class="cv-section">
           <h4 class="cv-section-title">PROJECT &amp; WORK EXPERIENCE</h4>
           
@@ -1033,11 +1105,11 @@
               <strong>Food Cart Management System with Geo-Spatial Location Monitoring (BCD Siomai)</strong>
               <span class="cv-date">2025 – 2026</span>
             </div>
-            <p class="cv-institution">Lead Developer • Beneficiary Web &amp; GIS Platform</p>
+            <p class="cv-institution">Lead Developer • BSIS Capstone Project</p>
             <ul class="cv-bullets">
-              <li><strong>Live Production URL:</strong> <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary-light); text-decoration: underline;">https://siomai-capstone-frontend.onrender.com/</a></li>
-              <li>Developed a comprehensive food cart management system with real-time geo-tagging and location monitoring functions for our beneficiary.</li>
-              <li>Engineered inventory stock reconciliation, automatic package discount computations, and vendor sales tracking.</li>
+              <li>Deployed live on Render: <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: underline;">https://siomai-capstone-frontend.onrender.com/</a></li>
+              <li>Engineered interactive geospatial map tracking for mobile vendor carts using Leaflet.js and OpenStreetMap.</li>
+              <li>Developed daily evening inventory stock reconciliation, automatic package discount computations, and sales auditing.</li>
             </ul>
           </div>
 
@@ -1046,43 +1118,43 @@
               <strong>Payment Disbursement System</strong>
               <span class="cv-date">2025</span>
             </div>
-            <p class="cv-institution">Developer • SYANDE Subject</p>
+            <p class="cv-institution">Developer &amp; Systems Analyst • SYANDE Subject</p>
             <ul class="cv-bullets">
-              <li>Developed a secure Payment Disbursement System managing transaction workflows and accounting reconciliation.</li>
+              <li>Designed voucher verification workflows, role-based approval queues, and transaction reconciliation in PHP and MySQL.</li>
             </ul>
           </div>
 
           <div class="cv-entry">
             <div class="cv-entry-head">
-              <strong>MCC — Food Restaurant Menu and Table Management System</strong>
+              <strong>MCC Food Restaurant Menu and Table Management System</strong>
               <span class="cv-date">2026</span>
             </div>
             <p class="cv-institution">Full-Stack Developer • PROFE6 Subject</p>
             <ul class="cv-bullets">
-              <li>Developed an interactive Menu and Table Management system deployed for a friend's workplace as our class project.</li>
+              <li>Engineered a real-time table layout occupancy grid, food item catalog, and cashier billing order flow.</li>
             </ul>
           </div>
 
           <div class="cv-entry">
             <div class="cv-entry-head">
-              <strong>CHMSU Campus Traffic Priority Routing &amp; Telemetry Portal</strong>
+              <strong>CHMSU Campus Network Monitoring &amp; Traffic Priority Portal</strong>
               <span class="cv-date">2026</span>
             </div>
-            <p class="cv-institution">Systems Analyst • PROFE7 Web Design Authoring</p>
+            <p class="cv-institution">Systems Analyst &amp; Interface Designer • PROFE7 Web Design Authoring</p>
             <ul class="cv-bullets">
-              <li>Designed SDN-based traffic matrix routing dashboard with centralized hardware telemetry across campus satellite nodes.</li>
+              <li>Formulated complete Context Level 0 and Level 1 DFD diagrams and normalized Crow's Foot ERD schema specifications.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Technical Competencies & Proficiency Levels -->
+        <!-- Technical Competencies -->
         <div class="cv-section">
-          <h4 class="cv-section-title">TECHNICAL SKILLS &amp; PROFICIENCY</h4>
+          <h4 class="cv-section-title">TECHNICAL SKILLS</h4>
           <div class="cv-grid-skills">
-            <div><strong>Front End Development (Intermediate):</strong> HTML5 Semantic, CSS3 (Flexbox/Grid), JavaScript (ES6+), Bootstrap 5, Responsive UI</div>
-            <div><strong>Back End &amp; Runtimes (Amateur):</strong> Node.js, TypeScript, PHP (OOP), MySQL Relational, RESTful APIs, CRUD Pipelines</div>
-            <div><strong>Cybersecurity &amp; Systems Analysis:</strong> Cybersecurity: (GRC) (2023 Beginner), ERD Diagrams, DFD Level 0/1, SDLC Lifecycle</div>
-            <div><strong>Tools &amp; Workflows:</strong> Git, GitHub, VS Code, XAMPP Server, Figma UI/UX, Canva Design</div>
+            <div><strong>Front-End:</strong> HTML5 Semantic, CSS3 (Flexbox/Grid), JavaScript ES6+, Bootstrap 5, Responsive Design</div>
+            <div><strong>Back-End &amp; Database:</strong> Node.js, TypeScript, PHP (OOP), MySQL Relational (3NF), RESTful APIs</div>
+            <div><strong>Systems Analysis:</strong> SDLC Methodologies, Data Flow Diagrams (DFD Level 0/1), Crow's Foot ERD, Use Case Specs</div>
+            <div><strong>Developer Tools:</strong> Git, GitHub, VS Code, XAMPP (Apache/MySQL), Figma UI/UX, Render Cloud</div>
           </div>
         </div>
 
@@ -1090,271 +1162,219 @@
     </div>
   </div>
 
-  <!-- 2. BCD SIOMAI LIVE DEMO MODAL -->
-  <div class="modal-backdrop" id="modalSiomaiDemo" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <h3>BCD Siomai — Live Web App &amp; Simulator</h3>
-          <span class="modal-sub">BSIS Capstone • Deployed Live on Render</span>
-        </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
-      </div>
-      <div class="modal-body">
-        <!-- Live App Production Callout -->
-        <div class="live-deployment-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(59, 130, 246, 0.12) 100%); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: var(--radius-md); padding: 14px 18px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="width: 38px; height: 38px; border-radius: var(--radius-sm); background: rgba(16, 185, 129, 0.2); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
-              🚀
-            </div>
-            <div>
-              <strong style="color: var(--text-main); font-size: 0.92rem; display: block;">Official Capstone Deployment on Render</strong>
-              <span style="color: #94A3B8; font-size: 0.78rem; font-family: var(--font-mono);">https://siomai-capstone-frontend.onrender.com/</span>
-            </div>
-          </div>
-          <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow btn-sm">
-            <span>Launch Live Website ↗</span>
-          </a>
-        </div>
-
-        <div class="demo-simulator-box">
-          <div class="simulator-header">
-            <span class="sim-pill online">● 3 Carts Active</span>
-            <span class="sim-metric">Gross Revenue: <strong>₱24,850.00</strong></span>
-          </div>
-
-          <div class="interactive-cart-list">
-            <div class="sim-cart-item active">
-              <div class="sim-cart-icon">🛒</div>
-              <div class="sim-cart-details">
-                <strong>Cart 01 — CHMSU Main Campus Gate</strong>
-                <span>Vendor: Mang Raul • Stock: 142/200 units</span>
-              </div>
-              <button class="btn btn-outline btn-xs sim-ping-btn" data-cart="1">Ping GPS</button>
-            </div>
-
-            <div class="sim-cart-item">
-              <div class="sim-cart-icon">🛒</div>
-              <div class="sim-cart-details">
-                <strong>Cart 02 — Talisay Public Plaza</strong>
-                <span>Vendor: Ate Marites • Stock: 38/250 units (Low)</span>
-              </div>
-              <button class="btn btn-outline btn-xs sim-ping-btn" data-cart="2">Ping GPS</button>
-            </div>
-
-            <div class="sim-cart-item">
-              <div class="sim-cart-icon">🛒</div>
-              <div class="sim-cart-details">
-                <strong>Cart 03 — Concepcion Highway Intersection</strong>
-                <span>Vendor: Kuya Jojo • Stock: 180/200 units</span>
-              </div>
-              <button class="btn btn-outline btn-xs sim-ping-btn" data-cart="3">Ping GPS</button>
-            </div>
-          </div>
-
-          <div class="sim-console" id="simConsoleOutput">
-            [System 19:40:08] Telemetry link established via REST API endpoint /api/v1/carts/telemetry. Status: 200 OK.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. BCD SIOMAI CASE STUDY MODAL -->
+  <!-- 2. BCD SIOMAI CASE STUDY MODAL -->
   <div class="modal-backdrop" id="modalSiomaiCase" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
-          <h3>Capstone Case Study: BCD Siomai GIS</h3>
-          <span class="modal-sub">Enterprise Architecture &amp; Methodology</span>
+          <h3>Capstone Case Study: BCD Siomai GIS Platform</h3>
+          <span class="modal-sub">Enterprise Architecture, Methodology &amp; Live Deployment</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body">
-        <!-- Live Deployment Banner inside Case Study -->
-        <div style="background: rgba(59, 130, 246, 0.08); border-left: 3px solid var(--color-primary); padding: 10px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+        <div style="background: var(--color-primary-subtle); border: 1px solid var(--card-border); padding: 12px 16px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
           <div>
-            <strong style="color: var(--text-main); font-size: 0.88rem;">Live Capstone Deployment:</strong>
-            <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary-light); font-family: var(--font-mono); font-size: 0.82rem; margin-left: 8px; text-decoration: underline;">https://siomai-capstone-frontend.onrender.com/ ↗</a>
+            <strong style="color: var(--text-main); font-size: 0.9rem;">Live Capstone Deployment:</strong>
+            <span style="font-family: var(--font-mono); font-size: 0.82rem; margin-left: 6px; color: var(--color-primary);">https://siomai-capstone-frontend.onrender.com/</span>
           </div>
-          <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xs" style="color: var(--color-primary-light); border-color: var(--color-primary);">
-            <span>Open Website ↗</span>
+          <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xs">
+            <span>Launch Live App ↗</span>
           </a>
         </div>
 
-        <div class="case-study-content">
-          <h4>1. Executive Summary &amp; Problem Statement</h4>
-          <p>
-            Mobile street food vendors in Bacolod and Talisay traditionally face severe discrepancies between commissary inventory distribution and daily evening cash reconciliations. Without real-time geospatial insight, commissary managers cannot verify cart placements, detect stock shortages during peak lunch hours, or prevent spoilage of unsold siomai dumplings.
+        <div class="specs-document">
+          <h4>1. Problem Background &amp; Beneficiary Needs</h4>
+          <p style="color: var(--text-muted); line-height: 1.65; font-size: 0.92rem;">
+            Mobile street food vendors in local community settings frequently encounter discrepancies between morning commissary stock allocations and evening cash collections. Without real-time geospatial location awareness, commissary managers cannot verify cart placements, detect stock depletion during lunch hours, or prevent spoilage of unsold perishables.
           </p>
 
-          <h4>2. Technical Solution Architecture</h4>
-          <p>
-            The BCD Siomai platform integrates three layers:
-          </p>
+          <h4>2. Technical System Architecture</h4>
           <ul class="case-study-list">
-            <li><strong>Mobile Vendor Client:</strong> Lightweight HTML5/JS progressive interface with Geolocation WatchPosition reporting coordinates every 60 seconds.</li>
-            <li><strong>Commissary Central Backend:</strong> PHP 8 OOP API managing inventory batch tables, calculating automatic wholesale package discounts, and verifying transaction checksums.</li>
-            <li><strong>Relational DB Tier:</strong> 3NF normalized MySQL database with tables for <code>tbl_carts</code>, <code>tbl_inventory_batches</code>, <code>tbl_daily_returns</code>, and <code>tbl_audit_logs</code>.</li>
+            <li><strong>Vendor Client Layer:</strong> Responsive interface reporting GPS coordinates at set intervals to log operational cart locations.</li>
+            <li><strong>Commissary Central Backend:</strong> Node.js and PHP server logic managing inventory batches, wholesale discounts, and daily return audits.</li>
+            <li><strong>Relational DB Tier:</strong> Normalized MySQL schema with tables for <code>tbl_carts</code>, <code>tbl_inventory_batches</code>, <code>tbl_daily_returns</code>, and <code>tbl_sales_logs</code>.</li>
           </ul>
 
-          <h4>3. Key Results &amp; Impact</h4>
-          <div class="impact-stats-grid">
-            <div class="impact-stat">
-              <span class="stat-number">98.4%</span>
-              <span class="stat-label">Stock Reconciliation Accuracy</span>
-            </div>
-            <div class="impact-stat">
-              <span class="stat-number">&lt; 2s</span>
-              <span class="stat-label">GPS Coordinate Update Interval</span>
-            </div>
-            <div class="impact-stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Zero Data Loss on Nightly Audit</span>
-            </div>
-          </div>
+          <h4>3. Verified Results &amp; Practical Impact</h4>
+          <ul class="case-study-list">
+            <li>Eliminated manual paper log discrepancies during end-of-day cash and stock turn-ins.</li>
+            <li>Delivered verified interactive map visibility for all active mobile vendors across campus and commercial hub locations.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 4. GITHUB REPO MODAL -->
-  <div class="modal-backdrop" id="modalSiomaiRepo" aria-hidden="true">
+  <!-- 3. MCC RESTAURANT OVERVIEW MODAL -->
+  <div class="modal-backdrop" id="modalMccOverview" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
-          <h3>GitHub Repository Information</h3>
-          <span class="modal-sub">github.com/edreijosh/bcd-siomai-gis</span>
+          <h3>MCC Food Restaurant Management</h3>
+          <span class="modal-sub">Menu &amp; Table Management System Overview (PROFE6)</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body">
-        <div class="repo-preview-card">
-          <div class="repo-info-row">
-            <div class="repo-name">📁 edreijosh / <strong>bcd-siomai-gis</strong></div>
-            <span class="repo-badge">Public</span>
-          </div>
-          <p class="repo-desc">
-            Full-Stack Sales &amp; Inventory Management System with Leaflet.js Geospatial Mapping and PHP/MySQL REST API. Developed for BSIS Capstone at CHMSU Talisay.
+        <div class="specs-document">
+          <h4>System Purpose &amp; Objectives</h4>
+          <p style="color: var(--text-muted); line-height: 1.65; font-size: 0.92rem;">
+            Developed for a local food establishment as a coursework deliverable for PROFE6. The system eliminates paper order tickets and visualizes dining floor occupancy to improve table turnaround times.
           </p>
-          <div class="repo-tags-wrap">
-            <span class="sub-badge">PHP</span>
-            <span class="sub-badge">MySQL</span>
-            <span class="sub-badge">Leaflet</span>
-            <span class="sub-badge">Bootstrap-5</span>
-            <span class="sub-badge">GIS</span>
-          </div>
-          <div class="repo-actions mt-3" style="display: flex; gap: 10px; flex-direction: column;">
-            <a href="https://siomai-capstone-frontend.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow btn-block">
-              <span>Visit Live Web App on Render</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-            </a>
-            <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
-              <span>View GitHub Profile &amp; Repositories</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-          </div>
+          <h4>Core Functional Modules</h4>
+          <ul class="case-study-list">
+            <li><strong>Interactive Floor Grid:</strong> Visual station map showing Occupied, Reserved, and Cleaning table statuses.</li>
+            <li><strong>Item Catalog:</strong> Database-driven categorization with dish variants, prices, and stock availability flags.</li>
+            <li><strong>Cashier Billing:</strong> Real-time order calculation with invoice generation and daily sales tallying.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 5. CHMSU SDN TELEMETRY OVERVIEW MODAL -->
-  <div class="modal-backdrop" id="modalSdnOverview" aria-hidden="true">
+  <!-- 4. MCC SPECS MODAL -->
+  <div class="modal-backdrop" id="modalMccSpecs" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
-          <h3>CHMSU Campus SDN Telemetry Portal</h3>
-          <span class="modal-sub">Priority Routing &amp; Quality of Service (QoS)</span>
+          <h3>MCC Restaurant — Database Schema</h3>
+          <span class="modal-sub">Relational Schema &amp; Entities</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body">
-        <p>
-          A Software-Defined Networking (SDN) portal designed to visualize and prioritize mission-critical academic services across CHMSU satellite campuses (Talisay, Alijis, Fortune Town, Binalbagan).
-        </p>
-        <div class="sdn-metrics-summary">
-          <div class="metric-card">
-            <div class="metric-val text-blue">12 ms</div>
-            <div class="metric-lbl">Fiber Backbone Latency</div>
+        <div class="specs-document">
+          <h4>Database Tables &amp; Keys</h4>
+          <div class="diagram-ascii-box">
+tbl_tables (table_id [PK], table_number, capacity, status [Occupied/Vacant/Reserved])
+tbl_categories (category_id [PK], category_name, display_order)
+tbl_menu_items (item_id [PK], category_id [FK], item_name, price, is_available)
+tbl_orders (order_id [PK], table_id [FK], order_timestamp, total_amount, payment_status)
+tbl_order_items (order_item_id [PK], order_id [FK], item_id [FK], quantity, subtotal)
           </div>
-          <div class="metric-card">
-            <div class="metric-val text-green">99.98%</div>
-            <div class="metric-lbl">Link Uptime</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-val text-purple">1 Gbps</div>
-            <div class="metric-lbl">Dedicated Academic Uplink</div>
-          </div>
-        </div>
-        <div class="tech-stack-row mt-3">
-          <span class="tech-tag">SDN</span>
-          <span class="tech-tag">JavaScript ES6</span>
-          <span class="tech-tag">Chart.js Telemetry</span>
-          <span class="tech-tag">QoS Traffic Shaping</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 6. DFD / ERD SPECS MODAL -->
+  <!-- 5. PAYMENT DISBURSEMENT OVERVIEW MODAL -->
+  <div class="modal-backdrop" id="modalDisbursementOverview" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Payment Disbursement System</h3>
+          <span class="modal-sub">Enterprise Requisition &amp; Audit Architecture (SYANDE)</span>
+        </div>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="specs-document">
+          <h4>Workflow Architecture</h4>
+          <p style="color: var(--text-muted); line-height: 1.65; font-size: 0.92rem;">
+            The Payment Disbursement System was designed to enforce internal financial controls for institutional requisitions. It prevents unauthorized payments through a sequential 4-stage authorization pipeline.
+          </p>
+          <h4>Authorization Pipeline</h4>
+          <ul class="case-study-list">
+            <li><strong>Stage 1 - Requisition:</strong> Department staff enters payee details, fund allocation, and expense line items.</li>
+            <li><strong>Stage 2 - Verification:</strong> Accounting auditor checks fund availability and supporting receipts.</li>
+            <li><strong>Stage 3 - Approval:</strong> Designated executive officer authorizes payment release.</li>
+            <li><strong>Stage 4 - Check Disbursement:</strong> Cashier records check disbursement number and logs final release timestamp.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. DISBURSEMENT AUDIT MODAL -->
+  <div class="modal-backdrop" id="modalDisbursementAudit" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Disbursement System — Audit Specifications</h3>
+          <span class="modal-sub">Security, Non-Repudiation &amp; Relational Schema</span>
+        </div>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="specs-document">
+          <h4>Audit Trail Schema</h4>
+          <div class="diagram-ascii-box">
+tbl_disbursement_vouchers (
+  voucher_id [PK], voucher_code, requester_id, payee_name, 
+  amount, expense_category, current_stage, created_at
+)
+tbl_approval_logs (
+  log_id [PK], voucher_id [FK], approver_user_id, 
+  action [APPROVED/REJECTED/REVISED], remarks, action_timestamp, ip_address
+)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. CHMSU SDN TELEMETRY SPECS MODAL -->
   <div class="modal-backdrop" id="modalSdnSpecs" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
-          <h3>System Analysis Specifications: DFD &amp; ERD</h3>
-          <span class="modal-sub">Gane &amp; Sarson DFD Level 0/1 &amp; Crow's Foot ERD</span>
+          <h3>Systems Analysis: DFD Level 0/1 &amp; ERD Specifications</h3>
+          <span class="modal-sub">CHMSU Campus Network Monitoring &amp; Traffic Priority Portal (PROFE7)</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body">
         <div class="specs-document">
           <h4>Data Flow Diagram (DFD Level 0 — Context Diagram)</h4>
           <div class="diagram-ascii-box">
-┌─────────────────┐       Telemetry &amp; QoS Config      ┌─────────────────────────────┐
-│  Network Admin  │ ─────────────────────────────────► │  0.0 CHMSU Campus Traffic   │
-│   (User Actor)  │ ◄───────────────────────────────── │    Priority SDN Portal      │
-└─────────────────┘       System Health &amp; Logs        └──────────────┬──────────────┘
+┌─────────────────┐       Network Config &amp; Queries    ┌─────────────────────────────┐
+│  Network Admin  │ ─────────────────────────────────► │  0.0 CHMSU Campus Network   │
+│   (User Actor)  │ ◄───────────────────────────────── │    Monitoring &amp; Telemetry   │
+└─────────────────┘       Telemetry Logs &amp; Status     └──────────────┬──────────────┘
                                                                      │
                                              Read / Write Flow Data  │
                                                                      ▼
                                                       ┌─────────────────────────────┐
-                                                      │ D1: Telemetry_Log_Store     │
+                                                      │ D1: Campus_Telemetry_Store  │
                                                       └─────────────────────────────┘
           </div>
 
           <h4>Entity Relationship Diagram (ERD Schema Entities)</h4>
           <ul class="case-study-list">
-            <li><strong>CAMPUS_NODE:</strong> Node_ID (PK), Campus_Name, IP_Subnet, Fiber_Capacity, Status.</li>
-            <li><strong>FLOW_POLICY:</strong> Policy_ID (PK), Service_Type, Priority_Queue_Level, Bandwidth_Cap.</li>
-            <li><strong>TRAFFIC_LOG:</strong> Log_ID (PK), Node_ID (FK), Timestamp, Latency_ms, Packet_Loss_Pct.</li>
+            <li><strong>CAMPUS_NODE:</strong> Node_ID (PK), Campus_Name, IP_Subnet, Fiber_Link_Speed, Status.</li>
+            <li><strong>TRAFFIC_POLICY:</strong> Policy_ID (PK), Node_ID (FK), Service_Type, Priority_Queue_Level.</li>
+            <li><strong>TELEMETRY_LOG:</strong> Log_ID (PK), Node_ID (FK), Timestamp, Latency_ms, Packet_Loss_Rate.</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 7. TECHNICAL DOCS MODAL -->
+  <!-- 8. CHMSU SDN DOCS MODAL -->
   <div class="modal-backdrop" id="modalSdnDocs" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
-          <h3>SDN Telemetry Technical Documentation</h3>
-          <span class="modal-sub">Implementation Architecture &amp; API Specs</span>
+          <h3>Technical Documentation: Telemetry API</h3>
+          <span class="modal-sub">CHMSU Campus Network Interface Specifications</span>
         </div>
-        <button class="modal-close-btn" data-close-modal>✕</button>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
       </div>
       <div class="modal-body">
-        <p>Comprehensive technical documentation detailing deployment parameters, OpenFlow controller bindings, and REST health endpoints for campus network administrators.</p>
-        <div class="code-preview-block">
+        <div class="specs-document">
+          <h4>REST Telemetry Endpoint Spec</h4>
+          <div class="code-preview-block">
 GET /api/v1/network/telemetry/health
 Authorization: Bearer [ADMIN_TOKEN]
 Response: {
   "status": "HEALTHY",
-  "campus_nodes": 4,
+  "active_nodes": 4,
+  "campus_clusters": ["Talisay", "Alijis", "Fortune Town", "Binalbagan"],
   "avg_latency_ms": 12.4,
-  "priority_queue": "ACTIVE_802.1p"
+  "priority_policy": "ACTIVE_802.1p"
 }
+          </div>
         </div>
       </div>
     </div>
@@ -1364,6 +1384,6 @@ Response: {
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <!-- Core JavaScript -->
-  <script src="js/main.js?v=8"></script>
+  <script src="js/main.js?v=11"></script>
 </body>
 </html>
