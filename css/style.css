@@ -1177,6 +1177,119 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
+/* Capstone Photo Preview & Gallery System (Flat & Minimalistic) */
+.project-photo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.photo-strip-item {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: var(--bg-card-subtle);
+  cursor: pointer;
+  aspect-ratio: 16 / 10;
+  display: block;
+  transition: border-color var(--transition-fast);
+}
+
+.photo-strip-item:hover {
+  border-color: var(--color-primary);
+}
+
+.photo-strip-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-strip-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 23, 42, 0.88);
+  color: #F8FAFC;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 1px solid var(--card-border);
+}
+
+[data-theme="light"] .photo-strip-tag {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0F172A;
+}
+
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gallery-card {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card-img-wrap {
+  width: 100%;
+  background: var(--bg-card-subtle);
+  overflow: hidden;
+}
+
+.gallery-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-card-content {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg-card-subtle);
+  border-top: 1px solid var(--card-border);
+}
+
+.gallery-card-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.gallery-card-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .photo-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-photo-strip {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+}
+
 /* --------------------------------------------------------------------------
    12. Section 04: Contact & Inquiries (Flat 2-Column Architecture)
    -------------------------------------------------------------------------- */

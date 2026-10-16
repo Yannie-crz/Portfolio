@@ -658,6 +658,22 @@
                 </div>
               </div>
 
+              <!-- Authentic Fieldwork & Defense Photo Preview Strip -->
+              <div class="project-photo-strip" title="Click to view full capstone defense & fieldwork documentation">
+                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                  <img src="assets/capstone_beneficiary_interview.jpg" alt="Field Requirements Interview with Beneficiary" class="photo-strip-img">
+                  <span class="photo-strip-tag">Fieldwork</span>
+                </div>
+                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                  <img src="assets/capstone_pre_oral_defense.jpg" alt="Pre-Oral Defense with Live GIS Map" class="photo-strip-img">
+                  <span class="photo-strip-tag">Pre-Oral Defense</span>
+                </div>
+                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                  <img src="assets/capstone_defended_celebration.jpg" alt="Capstone Defended Milestone" class="photo-strip-img">
+                  <span class="photo-strip-tag">Defended</span>
+                </div>
+              </div>
+
               <!-- Tech Badges -->
               <div class="tech-stack-row">
                 <span class="tech-tag">React</span>
@@ -674,10 +690,14 @@
                 <span>Visit Live App ↗</span>
               </a>
               <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSiomaiCase">
-                <span>Case Study &amp; Architecture</span>
+                <span>Case Study</span>
+              </button>
+              <button class="btn btn-outline btn-sm project-modal-btn" data-modal="modalSiomaiPhotos">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                <span>Defense &amp; Field Photos (5)</span>
               </button>
               <a href="https://github.com/Yannie-crz" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                <span>GitHub Profile ↗</span>
+                <span>GitHub ↗</span>
               </a>
             </div>
           </article>
@@ -1208,7 +1228,92 @@
           <ul class="case-study-list">
             <li>Eliminated manual paper log discrepancies during end-of-day cash and stock turn-ins.</li>
             <li>Delivered verified interactive map visibility for all active mobile vendors across campus and commercial hub locations.</li>
+            <li>Successfully presented, evaluated, and approved before the CHMSU College of Computer Studies faculty panel.</li>
           </ul>
+
+          <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--card-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 0.84rem; color: var(--text-muted);">Authentic field assessment and oral defense documentation:</span>
+            <button class="btn btn-outline btn-xs project-modal-btn" data-modal="modalSiomaiPhotos">
+              <span>View All 5 Defense &amp; Field Photos</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2B. BCD SIOMAI DEFENSE & FIELDWORK PHOTOS MODAL -->
+  <div class="modal-backdrop" id="modalSiomaiPhotos" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Capstone Defense &amp; Beneficiary Fieldwork Documentation</h3>
+          <span class="modal-sub">BCD Siomai GIS Platform • CHMSU College of Computer Studies</span>
+        </div>
+        <button class="modal-close-btn" data-close-modal aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+          Photographic evidence of the complete capstone engineering lifecycle: on-site beneficiary workflow consultation, pre-oral demonstration of the live GIS tracking interface, formal faculty panel defense, and official defense approval.
+        </p>
+
+        <div class="photo-gallery-grid">
+
+          <!-- Photo 1: Capstone Defended Milestone -->
+          <div class="gallery-card">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/capstone_defended_celebration.jpg" alt="Capstone Defended Milestone Celebration" class="gallery-card-img">
+            </div>
+            <div class="gallery-card-content">
+              <h4 class="gallery-card-title">Capstone Defended Milestone</h4>
+              <p class="gallery-card-desc">Edrei Josh Cruz and the capstone team celebrating successful defense completion with the approved manuscript and live deployed laptop system.</p>
+            </div>
+          </div>
+
+          <!-- Photo 2: Beneficiary Field Interview -->
+          <div class="gallery-card">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/capstone_beneficiary_interview.jpg" alt="Field Requirements Interview with Beneficiary" class="gallery-card-img">
+            </div>
+            <div class="gallery-card-content">
+              <h4 class="gallery-card-title">Field Beneficiary Requirements Consultation</h4>
+              <p class="gallery-card-desc">On-site workflow analysis and requirement gathering session with the BCD Siomai beneficiary business owner, examining physical inventory sheets and daily vendor remittances.</p>
+            </div>
+          </div>
+
+          <!-- Photo 3: Pre-Oral Defense -->
+          <div class="gallery-card">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/capstone_pre_oral_defense.jpg" alt="Pre-Oral Defense Presentation with GIS Map" class="gallery-card-img">
+            </div>
+            <div class="gallery-card-content">
+              <h4 class="gallery-card-title">Pre-Oral Defense &amp; Live GIS Map Demonstration</h4>
+              <p class="gallery-card-desc">Demonstration of the interactive Leaflet.js cart location tracking module and route telemetry before the CCS faculty advisory committee in the computer laboratory.</p>
+            </div>
+          </div>
+
+          <!-- Photo 4: Faculty Panel Presentation -->
+          <div class="gallery-card">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/capstone_panel_presentation.jpg" alt="Capstone Defense Before Faculty Panel" class="gallery-card-img">
+            </div>
+            <div class="gallery-card-content">
+              <h4 class="gallery-card-title">Oral Defense Before Faculty Examiners</h4>
+              <p class="gallery-card-desc">Presenting full-stack software architecture, relational database normalization, and package discount computation logic to the CHMSU College of Computer Studies panel.</p>
+            </div>
+          </div>
+
+          <!-- Photo 5: Panel Deliberations -->
+          <div class="gallery-card" style="grid-column: 1 / -1;">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/capstone_defense_panel.jpg" alt="Technical Deliberations & Panel Review" class="gallery-card-img" style="height: 260px;">
+            </div>
+            <div class="gallery-card-content">
+              <h4 class="gallery-card-title">Technical Deliberations &amp; Final Review</h4>
+              <p class="gallery-card-desc">Faculty panel of examiners reviewing the deployed web dashboard and database transaction logs on the computer laboratory smart monitor.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
