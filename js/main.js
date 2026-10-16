@@ -318,11 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toast = document.createElement('div');
     toast.className = `toast ${type === 'success' ? 'toast-success' : ''}`;
     
-    const icon = type === 'success' ? '✓' : (type === 'error' ? '✕' : 'ℹ');
-    toast.innerHTML = `
-      <span class="toast-icon">${icon}</span>
-      <span class="toast-msg">${message}</span>
-    `;
+    toast.innerHTML = `<span class="toast-msg">${message}</span>`;
 
     toastContainer.appendChild(toast);
 
