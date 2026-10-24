@@ -553,29 +553,66 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--color-success-subtle);
+  background: var(--bg-card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius-full);
-  padding: 5px 14px;
+  padding: 6px 14px;
   margin-bottom: 20px;
   max-width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.status-pill:hover {
+  border-color: var(--color-primary);
+  background: var(--bg-card-subtle);
 }
 
 .status-dot {
+  position: relative;
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--color-success);
+  background: #10B981;
   flex-shrink: 0;
 }
 
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: #10B981;
+  opacity: 0.35;
+  animation: statusPulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
 .status-text {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--color-success-text);
-  font-family: var(--font-mono);
-  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-sep {
+  color: var(--text-dim);
+  font-size: 0.72rem;
 }
 
 .hero-greeting {
@@ -2225,10 +2262,11 @@ h1, h2, h3, h4 {
   }
 
   .status-text {
-    font-size: clamp(0.68rem, 2.7vw, 0.74rem);
-    letter-spacing: 0.02em;
+    font-size: clamp(0.7rem, 2.8vw, 0.76rem);
+    letter-spacing: 0.01em;
     line-height: 1.35;
     text-align: center;
+    justify-content: center;
   }
 
   .hero-greeting {
