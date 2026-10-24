@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=11">
+  <link rel="stylesheet" href="css/style.css?v=20">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23131C31'/><text x='50' y='62' font-size='32' font-weight='800' fill='%233B82F6' text-anchor='middle' font-family='sans-serif'>EJC</text></svg>">
 </head>
 <body>
@@ -65,7 +65,7 @@
 
   <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
-  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <aside class="mobile-drawer" id="mobileDrawer" inert>
     <div class="drawer-header">
       <div class="brand-logo">
         <span class="logo-symbol">&lt;/&gt;</span>
@@ -132,17 +132,19 @@
 
           <!-- Action Buttons -->
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
+            <a href="#projects" class="btn btn-primary hero-btn-main">
               <span>View Featured Projects</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <button class="btn btn-outline" id="openCvBtn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              <span>View CV Dossier</span>
-            </button>
-            <a href="#contact" class="btn btn-outline">
-              <span>Get In Touch</span>
-            </a>
+            <div class="hero-actions-secondary">
+              <button class="btn btn-outline" id="openCvBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                <span>View CV Dossier</span>
+              </button>
+              <a href="#contact" class="btn btn-outline">
+                <span>Get In Touch</span>
+              </a>
+            </div>
           </div>
 
           <!-- Quick Verified Contact Row -->
@@ -173,7 +175,7 @@
         <div class="hero-visual">
           <div class="profile-card">
             <div class="profile-avatar-wrap">
-              <img src="assets/edrei_portrait_headshot.jpg" alt="Edrei Josh Cruz - Senior BSIS Student" class="profile-avatar-img" width="140" height="140">
+              <img src="assets/edrei_portrait_headshot.jpg" alt="Edrei Josh Cruz - Senior BSIS Student" class="profile-avatar-img" width="250" height="250">
             </div>
 
             <h3 class="profile-card-name">Edrei Josh Cruz</h3>
@@ -660,15 +662,15 @@
 
               <!-- Authentic Fieldwork & Defense Photo Preview Strip -->
               <div class="project-photo-strip" title="Click to view full capstone defense & fieldwork documentation">
-                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                <div class="photo-strip-item project-modal-btn" role="button" tabindex="0" data-modal="modalSiomaiPhotos">
                   <img src="assets/capstone_beneficiary_interview.jpg" alt="Field Requirements Interview with Beneficiary" class="photo-strip-img">
                   <span class="photo-strip-tag">Fieldwork</span>
                 </div>
-                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                <div class="photo-strip-item project-modal-btn" role="button" tabindex="0" data-modal="modalSiomaiPhotos">
                   <img src="assets/capstone_pre_oral_defense.jpg" alt="Pre-Oral Defense with Live GIS Map" class="photo-strip-img">
                   <span class="photo-strip-tag">Pre-Oral Defense</span>
                 </div>
-                <div class="photo-strip-item project-modal-btn" data-modal="modalSiomaiPhotos">
+                <div class="photo-strip-item project-modal-btn" role="button" tabindex="0" data-modal="modalSiomaiPhotos">
                   <img src="assets/capstone_defended_celebration.jpg" alt="Capstone Defended Milestone" class="photo-strip-img">
                   <span class="photo-strip-tag">Defended</span>
                 </div>
@@ -737,11 +739,11 @@
 
               <!-- Authentic Project Photos Strip: Evolution from KARE (PROFE5) to MCC (PROFE6) -->
               <div class="project-photo-strip" style="grid-template-columns: repeat(2, 1fr);" title="Click to view full project demonstration and exhibit documentation">
-                <div class="photo-strip-item project-modal-btn" data-modal="modalMccOverview">
+                <div class="photo-strip-item project-modal-btn" role="button" tabindex="0" data-modal="modalMccOverview">
                   <img src="assets/mcc_restaurant_demo.jpg" alt="MCC Seafood Restaurant Live Ordering &amp; Table Management Demonstration" class="photo-strip-img">
                   <span class="photo-strip-tag">PROFE6: Live System Demo</span>
                 </div>
-                <div class="photo-strip-item project-modal-btn" data-modal="modalMccOverview">
+                <div class="photo-strip-item project-modal-btn" role="button" tabindex="0" data-modal="modalMccOverview">
                   <img src="assets/mcc_kare_exhibit.png" alt="PROFE5 KARE Prototype Project Exhibit and Poster" class="photo-strip-img" style="object-position: center top;">
                   <span class="photo-strip-tag">PROFE5: Initial KARE Exhibit</span>
                 </div>
@@ -1073,7 +1075,7 @@
   <!-- ==================== MODAL SYSTEM ==================== -->
 
   <!-- 1. CURRICULUM VITAE (CV) MODAL -->
-  <div class="modal-backdrop" id="modalCv" aria-hidden="true">
+  <div class="modal-backdrop" id="modalCv" inert>
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1215,7 +1217,7 @@
   </div>
 
   <!-- 2. BCD SIOMAI CASE STUDY MODAL -->
-  <div class="modal-backdrop" id="modalSiomaiCase" aria-hidden="true">
+  <div class="modal-backdrop" id="modalSiomaiCase" inert>
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1267,7 +1269,7 @@
   </div>
 
   <!-- 2B. BCD SIOMAI DEFENSE & FIELDWORK PHOTOS MODAL -->
-  <div class="modal-backdrop" id="modalSiomaiPhotos" aria-hidden="true">
+  <div class="modal-backdrop" id="modalSiomaiPhotos" inert>
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1344,7 +1346,7 @@
   </div>
 
   <!-- 3. MCC SEAFOOD RESTAURANT OVERVIEW MODAL -->
-  <div class="modal-backdrop" id="modalMccOverview" aria-hidden="true">
+  <div class="modal-backdrop" id="modalMccOverview" inert>
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1389,7 +1391,7 @@
             Both systems serve the same enterprise (MCC Seafood Restaurant) with aligned goals, but differ significantly in software engineering maturity:
           </p>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 12px 0;">
+          <div class="comparison-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 12px 0;">
             <div style="background: var(--bg-card-subtle); border: 1px solid var(--card-border); border-radius: var(--radius-sm); padding: 12px 14px;">
               <strong style="color: var(--text-main); font-size: 0.85rem; display: block; margin-bottom: 6px;">PROFE5 — "KARE" (Initial Prototype)</strong>
               <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; margin: 0;">
@@ -1416,7 +1418,7 @@
   </div>
 
   <!-- 4. MCC SPECS MODAL -->
-  <div class="modal-backdrop" id="modalMccSpecs" aria-hidden="true">
+  <div class="modal-backdrop" id="modalMccSpecs" inert>
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1441,7 +1443,7 @@ tbl_order_items (order_item_id [PK], order_id [FK], item_id [FK], quantity, subt
   </div>
 
   <!-- 5. PAYMENT DISBURSEMENT OVERVIEW MODAL -->
-  <div class="modal-backdrop" id="modalDisbursementOverview" aria-hidden="true">
+  <div class="modal-backdrop" id="modalDisbursementOverview" inert>
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1469,7 +1471,7 @@ tbl_order_items (order_item_id [PK], order_id [FK], item_id [FK], quantity, subt
   </div>
 
   <!-- 6. DISBURSEMENT AUDIT MODAL -->
-  <div class="modal-backdrop" id="modalDisbursementAudit" aria-hidden="true">
+  <div class="modal-backdrop" id="modalDisbursementAudit" inert>
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1497,7 +1499,7 @@ tbl_approval_logs (
   </div>
 
   <!-- 7. CHMSU SDN TELEMETRY SPECS MODAL -->
-  <div class="modal-backdrop" id="modalSdnSpecs" aria-hidden="true">
+  <div class="modal-backdrop" id="modalSdnSpecs" inert>
     <div class="modal-dialog modal-lg">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1534,7 +1536,7 @@ tbl_approval_logs (
   </div>
 
   <!-- 8. CHMSU SDN DOCS MODAL -->
-  <div class="modal-backdrop" id="modalSdnDocs" aria-hidden="true">
+  <div class="modal-backdrop" id="modalSdnDocs" inert>
     <div class="modal-dialog">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -1566,6 +1568,6 @@ Response: {
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <!-- Core JavaScript -->
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=13"></script>
 </body>
 </html>

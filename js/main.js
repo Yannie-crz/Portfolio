@@ -45,22 +45,39 @@ document.addEventListener('DOMContentLoaded', () => {
   const drawerCloseBtn = document.getElementById('drawerCloseBtn');
   const drawerNavLinks = document.querySelectorAll('.drawer-nav-link');
 
+  // Initial accessibility state for mobile drawer
+  if (mobileDrawer) {
+    mobileDrawer.setAttribute('inert', '');
+  }
+
   function openDrawer() {
     if (mobileDrawer && drawerOverlay) {
+      mobileDrawer.removeAttribute('inert');
+      mobileDrawer.removeAttribute('aria-hidden');
       mobileDrawer.classList.add('active');
       drawerOverlay.classList.add('active');
-      mobileDrawer.setAttribute('aria-hidden', 'false');
       if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
+      if (drawerCloseBtn) {
+        drawerCloseBtn.focus();
+      }
     }
   }
 
   function closeDrawer() {
     if (mobileDrawer && drawerOverlay) {
+      // Return focus to hamburgerBtn before hiding
+      if (hamburgerBtn) {
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        hamburgerBtn.focus();
+      } else if (document.activeElement && mobileDrawer.contains(document.activeElement)) {
+        document.activeElement.blur();
+      }
+
       mobileDrawer.classList.remove('active');
       drawerOverlay.classList.remove('active');
-      mobileDrawer.setAttribute('aria-hidden', 'true');
-      if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+      mobileDrawer.removeAttribute('aria-hidden');
+      mobileDrawer.setAttribute('inert', '');
       document.body.style.overflow = '';
     }
   }
@@ -118,11 +135,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBackdrops = document.querySelectorAll('.modal-backdrop');
   const modalCloseButtons = document.querySelectorAll('[data-close-modal]');
 
+  let lastFocusedTrigger = null;
+
+  // Initial accessibility state for modal backdrops
+  modalBackdrops.forEach(m => m.setAttribute('inert', ''));
+
   function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
+      lastFocusedTrigger = document.activeElement;
+      modal.removeAttribute('inert');
+      modal.removeAttribute('aria-hidden');
       modal.classList.add('active');
-      modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
 
       const focusable = modal.querySelector('button, [href], input, select, textarea');
@@ -132,8 +156,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function closeModal(modal) {
     if (modal) {
+      // 1. Move focus out of the modal before changing state
+      if (document.activeElement && modal.contains(document.activeElement)) {
+        document.activeElement.blur();
+      }
+      if (lastFocusedTrigger && typeof lastFocusedTrigger.focus === 'function' && document.body.contains(lastFocusedTrigger)) {
+        lastFocusedTrigger.focus();
+      }
+
+      // 2. Cleanly deactivate and apply inert (no aria-hidden warning)
       modal.classList.remove('active');
-      modal.setAttribute('aria-hidden', 'true');
+      modal.removeAttribute('aria-hidden');
+      modal.setAttribute('inert', '');
       document.body.style.overflow = '';
     }
   }
@@ -186,7 +220,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const printCvBtn = document.getElementById('printCvBtn');
   if (printCvBtn) {
     printCvBtn.addEventListener('click', () => {
-      window.print();
+      const modalCv = document.getElementById('modalCv');
+      if (modalCv) {
+        modalCv.removeAttribute('inert');
+      }
+
+      try {
+        if (typeof window.print === 'function') {
+          window.print();
+        } else {
+          showToast('Print is not supported in this browser. Please use Download PDF.', 'info');
+        }
+      } catch (err) {
+        console.warn('Print error:', err);
+        showToast('Print dialog failed to open. Please use Download PDF.', 'info');
+      }
     });
   }
 
